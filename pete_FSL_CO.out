@@ -1,0 +1,5 @@
+
+WARNING: Dataset not found, nonexistent paths: ['/home/sophieguan/proj-pete/coco/val2017.txt']
+Downloading bash ./scripts/get_coco.sh ...
+Dataset autodownload failure
+

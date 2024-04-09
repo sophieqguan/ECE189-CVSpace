@@ -1,0 +1,17 @@
+Namespace(weights=['./runs/train/ALL_FULL_TINY/weights/best.pt'], data='./data-storage/full_dataset/obj_train_data/data_test.yaml', batch_size=40, img_size=640, conf_thres=0.4, iou_thres=0.7, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='ALL_FULL_TINY', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+[34m[1mval: [0mWARNING: Ignoring corrupted image and/or label data-storage/full_dataset/obj_train_data/test/images/CARDS_LIVINGROOM_T_B_frame_1750_jpg.rf.94d103988a590739e9d59eee25ffba33.jpg: duplicate labels
+                 all        4157        7743       0.989       0.977        0.98       0.899
+adjustable monkey wrench        4157        1211       0.996       0.993       0.997       0.928
+       monkey wrench        4157        1696       0.997       0.993       0.997       0.942
+           allen key        4157         947           1       0.964       0.969       0.898
+ double-flats wrench        4157         944       0.943       0.974       0.978       0.898
+                hand        4157        1521       0.986       0.958       0.964       0.754
+pedal lockring wrench        4157         853           1       0.953       0.958       0.909
+       crank remover        4157         571           1           1           1        0.96
+Speed: 1.2/2.4/3.6 ms inference/NMS/total per 640x640 image at batch-size 40
+Results saved to runs/test/ALL_FULL_TINY

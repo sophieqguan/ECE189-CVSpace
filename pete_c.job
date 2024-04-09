@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --ntasks=80
+#SBATCH --job-name=pete_c
+#SBATCH --output=pete_c.out
+#SBATCH --error=pete_c.err
+
+#SBATCH --time=336:00:00
+
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+export WANDB__SERVICE_WAIT=300
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+:
+cd $PBS_O_WORKDIR
+cd ./proj-pete
+
+# Run the Python script
+python ./training_128.py

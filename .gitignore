@@ -1,0 +1,5 @@
+data-storage/
+yolov7/coco/
+wandb/
+.ipynb_checkpoints/
+runs/*/exp*

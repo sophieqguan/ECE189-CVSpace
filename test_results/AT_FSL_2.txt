@@ -1,0 +1,17 @@
+Namespace(weights=['./runs/train/AT_FSL_2-freeze/weights/best.pt'], data='./data-storage/data/obj_train_data/data_test.yaml', batch_size=40, img_size=640, conf_thres=0.4, iou_thres=0.7, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='AT_FSL_2-freeze_test', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+[34m[1mval: [0mWARNING: Ignoring corrupted image and/or label data-storage/data/obj_train_data/test/images/CARDS_LIVINGROOM_T_B_frame_1750_jpg.rf.94d103988a590739e9d59eee25ffba33.jpg: duplicate labels
+                 all         882        2194       0.275      0.0199      0.0201     0.00922
+adjustable monkey wrench         882         133           0           0           0           0
+       monkey wrench         882         185           1     0.00541      0.0104     0.00832
+           allen key         882         104           0           0           0           0
+ double-flats wrench         882         104           0           0           0           0
+                hand         882        1512       0.922       0.134        0.13      0.0562
+pedal lockring wrench         882          94           0           0           0           0
+       crank remover         882          62           0           0           0           0
+Speed: 1.3/0.8/2.1 ms inference/NMS/total per 640x640 image at batch-size 40
+Results saved to runs/test/AT_FSL_2-freeze_test

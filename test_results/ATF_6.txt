@@ -1,0 +1,16 @@
+Namespace(weights=['./runs/train/ATF_6-freeze/weights/best.pt'], data='./data-storage/data/obj_train_data/data_test.yaml', batch_size=16, img_size=640, conf_thres=0.4, iou_thres=0.7, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='ATF_6-freeze_test', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+                 all         882        2194       0.384       0.319        0.31       0.254
+adjustable monkey wrench         882         133       0.909       0.451       0.432       0.349
+       monkey wrench         882         185         0.8       0.822       0.772       0.676
+           allen key         882         104           0           0           0           0
+ double-flats wrench         882         104           0           0           0           0
+                hand         882        1512       0.978        0.96       0.964       0.755
+pedal lockring wrench         882          94           0           0           0           0
+       crank remover         882          62           0           0           0           0
+Speed: 1.4/1.1/2.5 ms inference/NMS/total per 640x640 image at batch-size 16
+Results saved to runs/test/ATF_6-freeze_test

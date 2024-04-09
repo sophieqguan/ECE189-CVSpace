@@ -1,0 +1,2 @@
+Is GPU available: True
+Current Directory: /home/sophieguan/proj-pete

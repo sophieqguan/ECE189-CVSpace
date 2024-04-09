@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name=pete_FSL       # Job name
+#SBATCH --output=pete_FSL.out
+#SBATCH --error=pete_FSL.err
+#SBATCH --time=80:00:00            # Walltime (hh:mm:ss)
+
+#SBATCH -N 1 --ntasks-per-node=6 --partition=gpu
+#SBATCH --gres=gpu:1
+
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+export WANDB__SERVICE_WAIT=300
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd ./proj-pete
+
+run_name="ATF_FULL_7"
+
+# Run the Python script [python ./training_32.py]
+
+# Base Classes: Hand, Monkey Wrench, Adjustable Monkey Wrench
+# Novel Classes: allen key, double-flats wrench, pedal lockring, crank remover
+
+# Base Training
+# python ./yolov7/train.py --batch 40 --epochs 50 --data ./data-storage/50-shot-dataset/base/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp ./yolov7/data/hyp.scratch.tiny.yaml --name "$run_name-unfreeze"
+
+# Base + Novel finetuning
+# python ./yolov7/train.py --batch 32 --epochs 100 --data ./data-storage/50-shot-dataset/fewshot/obj_train_data/data.yaml --weights ./runs/train/$run_name-unfreeze/weights/best.pt --hyp ./yolov7/data/hyp.scratch.custom.fsl.yaml --name "$run_name-freeze" --freeze 51
+python ./yolov7/train.py --batch 32 --epochs 100 --data ./data-storage/50-shot-dataset/fewshot/obj_train_data/data.yaml --weights ./runs/train/ALL_FULL_TINY/weights/best.pt --hyp ./yolov7/data/hyp.scratch.custom.fsl.yaml --name "$run_name-freeze" --freeze 51
+
+# Testing on OG large dataset
+python ./yolov7/test.py --data ./data-storage/data/obj_train_data/data_test.yaml --img 640 --batch 16 --conf 0.40 --iou 0.70 --device 0 --weights "./runs/train/$run_name-freeze/weights/best.pt" --name "$run_name-freeze_test" > "./test_results/$run_name.txt"

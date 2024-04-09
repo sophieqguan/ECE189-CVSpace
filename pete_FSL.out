@@ -1,0 +1,216 @@
+freezing model.0.conv.weight
+freezing model.0.bn.weight
+freezing model.0.bn.bias
+freezing model.1.conv.weight
+freezing model.1.bn.weight
+freezing model.1.bn.bias
+freezing model.2.conv.weight
+freezing model.2.bn.weight
+freezing model.2.bn.bias
+freezing model.3.conv.weight
+freezing model.3.bn.weight
+freezing model.3.bn.bias
+freezing model.4.conv.weight
+freezing model.4.bn.weight
+freezing model.4.bn.bias
+freezing model.5.conv.weight
+freezing model.5.bn.weight
+freezing model.5.bn.bias
+freezing model.7.conv.weight
+freezing model.7.bn.weight
+freezing model.7.bn.bias
+freezing model.9.conv.weight
+freezing model.9.bn.weight
+freezing model.9.bn.bias
+freezing model.10.conv.weight
+freezing model.10.bn.weight
+freezing model.10.bn.bias
+freezing model.11.conv.weight
+freezing model.11.bn.weight
+freezing model.11.bn.bias
+freezing model.12.conv.weight
+freezing model.12.bn.weight
+freezing model.12.bn.bias
+freezing model.14.conv.weight
+freezing model.14.bn.weight
+freezing model.14.bn.bias
+freezing model.16.conv.weight
+freezing model.16.bn.weight
+freezing model.16.bn.bias
+freezing model.17.conv.weight
+freezing model.17.bn.weight
+freezing model.17.bn.bias
+freezing model.18.conv.weight
+freezing model.18.bn.weight
+freezing model.18.bn.bias
+freezing model.19.conv.weight
+freezing model.19.bn.weight
+freezing model.19.bn.bias
+freezing model.21.conv.weight
+freezing model.21.bn.weight
+freezing model.21.bn.bias
+freezing model.23.conv.weight
+freezing model.23.bn.weight
+freezing model.23.bn.bias
+freezing model.24.conv.weight
+freezing model.24.bn.weight
+freezing model.24.bn.bias
+freezing model.25.conv.weight
+freezing model.25.bn.weight
+freezing model.25.bn.bias
+freezing model.26.conv.weight
+freezing model.26.bn.weight
+freezing model.26.bn.bias
+freezing model.28.conv.weight
+freezing model.28.bn.weight
+freezing model.28.bn.bias
+freezing model.29.conv.weight
+freezing model.29.bn.weight
+freezing model.29.bn.bias
+freezing model.30.conv.weight
+freezing model.30.bn.weight
+freezing model.30.bn.bias
+freezing model.35.conv.weight
+freezing model.35.bn.weight
+freezing model.35.bn.bias
+freezing model.37.conv.weight
+freezing model.37.bn.weight
+freezing model.37.bn.bias
+freezing model.38.conv.weight
+freezing model.38.bn.weight
+freezing model.38.bn.bias
+freezing model.40.conv.weight
+freezing model.40.bn.weight
+freezing model.40.bn.bias
+freezing model.42.conv.weight
+freezing model.42.bn.weight
+freezing model.42.bn.bias
+freezing model.43.conv.weight
+freezing model.43.bn.weight
+freezing model.43.bn.bias
+freezing model.44.conv.weight
+freezing model.44.bn.weight
+freezing model.44.bn.bias
+freezing model.45.conv.weight
+freezing model.45.bn.weight
+freezing model.45.bn.bias
+freezing model.47.conv.weight
+freezing model.47.bn.weight
+freezing model.47.bn.bias
+freezing model.48.conv.weight
+freezing model.48.bn.weight
+freezing model.48.bn.bias
+freezing model.50.conv.weight
+freezing model.50.bn.weight
+freezing model.50.bn.bias
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.38, Best Possible Recall (BPR) = 0.9952
+                 all          57          86        0.99       0.988       0.994       0.905
+                 all          57          86        0.99       0.988       0.994       0.872
+                 all          57          86        0.99       0.988       0.993       0.876
+                 all          57          86        0.99       0.989       0.991       0.909
+                 all          57          86        0.99       0.989       0.993       0.893
+                 all          57          86       0.989       0.989       0.991       0.875
+                 all          57          86       0.989        0.99       0.995       0.862
+                 all          57          86       0.989       0.989       0.991       0.907
+                 all          57          86       0.989        0.99       0.992       0.888
+                 all          57          86       0.988        0.99       0.991       0.907
+                 all          57          86       0.988        0.99       0.995       0.877
+                 all          57          86       0.988        0.99       0.992       0.914
+                 all          57          86       0.987        0.99       0.993       0.881
+                 all          57          86       0.987        0.99       0.991       0.905
+                 all          57          86       0.987        0.99       0.992       0.896
+                 all          57          86       0.987        0.99       0.991       0.905
+                 all          57          86       0.987        0.99       0.994       0.892
+                 all          57          86       0.987        0.99       0.991        0.91
+                 all          57          86       0.987        0.99       0.992       0.901
+                 all          57          86       0.987        0.99       0.992       0.906
+                 all          57          86       0.987       0.991       0.992       0.903
+                 all          57          86       0.987        0.99       0.992       0.908
+                 all          57          86       0.988       0.989       0.992       0.895
+                 all          57          86       0.988       0.989       0.992       0.899
+                 all          57          86       0.989       0.988       0.991       0.902
+                 all          57          86       0.989       0.988       0.992       0.892
+                 all          57          86       0.988       0.988       0.992       0.892
+                 all          57          86       0.988       0.988       0.992       0.903
+                 all          57          86       0.989       0.988       0.992       0.906
+                 all          57          86       0.988       0.988       0.992       0.907
+                 all          57          86       0.988       0.988       0.992       0.902
+                 all          57          86       0.988       0.988       0.992       0.897
+                 all          57          86       0.989       0.988       0.993       0.906
+                 all          57          86       0.988       0.988       0.992       0.906
+                 all          57          86       0.988       0.988       0.992       0.906
+                 all          57          86       0.988       0.988       0.992       0.915
+                 all          57          86       0.988       0.988       0.994       0.908
+                 all          57          86       0.988       0.988       0.992       0.907
+                 all          57          86       0.988       0.989       0.992       0.909
+                 all          57          86       0.988       0.989       0.992       0.913
+                 all          57          86       0.988       0.989       0.993       0.911
+                 all          57          86       0.988       0.989       0.992       0.901
+                 all          57          86       0.987       0.989       0.992       0.908
+                 all          57          86       0.988       0.988       0.993       0.911
+                 all          57          86       0.988       0.988       0.992       0.912
+                 all          57          86       0.988       0.988       0.994       0.909
+                 all          57          86       0.987       0.988       0.994       0.914
+                 all          57          86       0.988       0.988       0.994        0.91
+                 all          57          86       0.988       0.988       0.994       0.918
+                 all          57          86       0.988       0.988       0.994       0.908
+                 all          57          86       0.988       0.988       0.994       0.915
+                 all          57          86       0.988       0.988       0.994       0.912
+                 all          57          86       0.988       0.988       0.994       0.917
+                 all          57          86       0.988       0.988       0.992       0.909
+                 all          57          86       0.988       0.988       0.994       0.911
+                 all          57          86       0.988       0.989       0.992       0.883
+                 all          57          86       0.988       0.989       0.992       0.904
+                 all          57          86       0.988       0.989       0.992       0.909
+                 all          57          86       0.988       0.988       0.992        0.91
+                 all          57          86       0.988       0.988       0.992       0.909
+                 all          57          86       0.988       0.988       0.993        0.91
+                 all          57          86       0.988       0.988       0.992       0.904
+                 all          57          86       0.988       0.988       0.992       0.902
+                 all          57          86       0.988       0.988       0.994       0.914
+                 all          57          86       0.988       0.988       0.993       0.902
+                 all          57          86       0.988       0.988       0.993        0.91
+                 all          57          86       0.988       0.988       0.993       0.908
+                 all          57          86       0.988       0.988       0.993       0.904
+                 all          57          86       0.988       0.988       0.992       0.914
+                 all          57          86       0.988       0.988       0.992       0.899
+                 all          57          86       0.988       0.988       0.992       0.915
+                 all          57          86       0.988       0.988       0.992       0.912
+                 all          57          86       0.988       0.988       0.993       0.891
+                 all          57          86       0.988       0.988       0.993       0.908
+                 all          57          86       0.988       0.988       0.993       0.906
+                 all          57          86       0.988       0.988       0.992       0.912
+                 all          57          86       0.987       0.988       0.993       0.911
+                 all          57          86       0.988       0.988       0.993       0.911
+                 all          57          86       0.988       0.988       0.993       0.912
+                 all          57          86       0.987       0.988       0.993       0.907
+                 all          57          86       0.988       0.988       0.993       0.916
+                 all          57          86       0.988       0.988       0.993       0.915
+                 all          57          86       0.987       0.989       0.993       0.914
+                 all          57          86       0.987       0.988       0.993       0.916
+                 all          57          86       0.987       0.988       0.993       0.917
+                 all          57          86       0.988       0.988       0.993       0.913
+                 all          57          86       0.988       0.988       0.993        0.91
+                 all          57          86       0.988       0.988       0.993        0.91
+                 all          57          86       0.988       0.988       0.992       0.914
+                 all          57          86       0.987       0.989       0.992       0.914
+                 all          57          86       0.987       0.989       0.993       0.914
+                 all          57          86       0.987       0.989       0.993       0.916
+                 all          57          86       0.987       0.989       0.993       0.916
+                 all          57          86       0.987       0.989       0.993       0.918
+                 all          57          86       0.987       0.988       0.993        0.92
+                 all          57          86       0.988       0.988       0.992       0.914
+                 all          57          86       0.988       0.988       0.992       0.912
+                 all          57          86       0.988       0.988       0.993       0.916
+                 all          57          86       0.988       0.988       0.993       0.916
+                 all          57          86       0.988       0.988       0.993       0.918
+adjustable monkey wrench          57          16       0.988           1       0.996       0.947
+       monkey wrench          57           8           1       0.981       0.995       0.979
+           allen key          57           8           1           1       0.995       0.929
+ double-flats wrench          57           8       0.977           1       0.995       0.886
+                hand          57          30           1       0.933       0.974       0.734
+pedal lockring wrench          57           8       0.979           1       0.996       0.957
+       crank remover          57           8       0.972           1       0.996       0.996
+Optimizer stripped from runs/train/ATF_FULL_7-freeze/weights/last.pt, 12.3MB
+Optimizer stripped from runs/train/ATF_FULL_7-freeze/weights/best.pt, 12.3MB

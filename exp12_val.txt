@@ -1,0 +1,20 @@
+Namespace(weights=['./runs/train/exp12/weights/best.pt'], data='./data-storage/data/obj_train_data/data_test.yaml', batch_size=32, img_size=640, conf_thres=0.001, iou_thres=0.65, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='exp12_val', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+                 all         951        1525       0.964       0.802       0.889       0.807
+adjustable monkey wrench         951         405       0.992        0.98       0.995       0.854
+           allen key         951         269       0.993           1       0.995       0.937
+ double-flats wrench         951         253       0.995       0.751       0.921        0.84
+       monkey wrench         951         272       0.997           1       0.995       0.913
+                hand         951          10           1           0       0.311       0.203
+        pedal wrench         951         126       0.752           1       0.978       0.931
+     lockring wrench         951          64        0.99       0.688       0.919         0.9
+       crank remover         951         126       0.995           1       0.995       0.876
+Speed: 8.0/5.7/13.6 ms inference/NMS/total per 640x640 image at batch-size 32
+Results saved to runs/test/exp12_val

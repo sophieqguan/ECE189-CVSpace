@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=pete_test       # Job name
+#SBATCH --output=pete_test.out
+#SBATCH --error=pete_test.err
+#SBATCH --time=00:01:59            # Walltime (hh:mm:ss)
+
+#SBATCH -N 1 --ntasks-per-node=6 --partition=gpu
+#SBATCH --gres=gpu:1
+
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd ./proj-pete
+
+# Run the Python script
+python ./yolov7/test.py --data ./data-storage/data/obj_train_data/data_test.yaml --img 640 --batch 40 --conf 0.40 --iou 0.70 --weights "./runs/train/ALL_RESAMPLED_TINY_323/weights/best.pt" --name "ALL_RESAMPLED_TINY_323" > "ALL_RESAMPLED_TINY_323.txt"
