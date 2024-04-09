@@ -1,0 +1,25 @@
+Fetching folder structure
+Working on ./full_dataset/robo_hand
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Entering ./data/obj_train_data/test/labels:
+Entering ./data/obj_train_data/train/labels:
+Entering ./data/obj_train_data/valid/labels:
+i: 0
+adjustable monkey wrench: 1350 instances (6.14%)
+i: 1
+monkey wrench: 1891 instances (8.60%)
+i: 2
+allen key: 1055 instances (4.80%)
+i: 3
+double-flats wrench: 1052 instances (4.78%)
+i: 4
+hand: 15062 instances (68.47%)
+i: 5
+pedal lockring wrench: 953 instances (4.33%)
+i: 6
+crank remover: 635 instances (2.89%)

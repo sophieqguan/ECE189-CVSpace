@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name=convert-data-full       # Job name
+#SBATCH --output=convert-data-full.out
+#SBATCH --error=convert-data-full.err
+#SBATCH --time=10:00:00            # Walltime (hh:mm:ss)
+
+#SBATCH --nodes=2 --ntasks-per-node 3
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd proj-pete/data-storage
+
+# Usage 1: python3 convert.py <input_video_path> <annotation_folder_path> <output_folder_path> [-z]")
+# Usage 2: python3 fetchFromCVAT.py [job_id]
+
+jobs=("632859" "632875" "632949" "632955" "632968" "632959" "632960" "632964" "632963" "632877" "632961" "632962")
+
+output="full_dataset"
+input="full_dataset"
+fr=1
+
+for job in "${jobs[@]}"
+do
+    rm -rf "./$output/$job"
+    python3 convertData.py --j "$job" --f $fr --o "./$output"
+done
+
+rm -rf "./$output/obj_train_data/test"
+rm -rf "./$output/obj_train_data/train"
+rm -rf "./$output/obj_train_data/valid"
+
+python mergeData.py --i "./$input" --o "./$output"
+python tally.py 
+

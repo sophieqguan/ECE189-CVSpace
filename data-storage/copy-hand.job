@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --job-name=convert-data-full       # Job name
+#SBATCH --output=convert-data-full.out
+#SBATCH --error=convert-data-full.err
+#SBATCH --time=10:00:00            # Walltime (hh:mm:ss)
+
+#SBATCH --nodes=2 --ntasks-per-node 3
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd proj-pete/data-storage
+
+# Usage 1: python3 convert.py <input_video_path> <annotation_folder_path> <output_folder_path> [-z]")
+# Usage 2: python3 fetchFromCVAT.py [job_id]
+
+output="full_dataset"
+input="full_dataset"
+
+python mergeData.py --i "./$input" --o "./$output"
+python tally.py 
+

@@ -1,4 +1,16 @@
-data-storage/
+data-storage/50-shot-dataset
+data-storage/bike-video
+data-storage/tool-video
+data-storage/videos
+data-storage/data
+data-storage/full_dataset
+data-storage/50-shot-dataset.zip
+data-storage/annotations.zip
+data-storage/annotations/**
+data-storage/data.zip
+data-storage/TODO.txt
+data-storage/.env
+
 yolov7/coco/
 wandb/
 .ipynb_checkpoints/

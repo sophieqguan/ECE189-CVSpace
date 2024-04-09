@@ -1,0 +1,39 @@
+#!/bin/bash
+#SBATCH --job-name=convert-data       # Job name
+#SBATCH --output=convert-data.out
+#SBATCH --error=convert-data.err
+#SBATCH --time=01:59:00            # Walltime (hh:mm:ss)
+
+#SBATCH --nodes=1 --ntasks-per-node 3
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd proj-pete/data-storage
+
+# Usage 1: python3 convert.py <input_video_path> <annotation_folder_path> <output_folder_path> [-z]")
+# Usage 2: python3 fetchFromCVAT.py [job_id]
+
+jobs=("632875" "632959" "632859" "632955" "632963" "632964")
+output="50-shot-dataset"
+
+for job in "${jobs[@]}"
+do
+    rm -rf "./$output/$job"
+done
+
+rm -rf "./$output/base/obj_train_data/test"
+rm -rf "./$output/base/obj_train_data/train"
+rm -rf "./$output/base/obj_train_data/valid"
+
+# fewshot has no test dataset per se
+rm -rf "./$output/fewshot/obj_train_data/train"
+rm -rf "./$output/fewshot/obj_train_data/valid"
+
+python utility.py
+python merge_50.py
