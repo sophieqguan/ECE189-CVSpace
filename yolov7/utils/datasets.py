@@ -548,16 +548,8 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                 img, labels = load_mosaic9(self, index)
             shapes = None
 
-            # CutMix 
-            if random.random() < 0.6:
-                if random.random() < 0.8:
-                    img2, labels2 = load_mosaic(self, random.randint(0, len(self.labels) - 1))
-                else:
-                    img2, labels2 = load_mosaic9(self, random.randint(0, len(self.labels) - 1))
-                img, labels = cutmix(img, labels, img2, labels2)  # returns mixed image, mixed boxes (labels)
 
             # MixUp https://arxiv.org/pdf/1710.09412.pdf
-            """
             if random.random() < hyp['mixup']:
                 if random.random() < 0.8:
                     img2, labels2 = load_mosaic(self, random.randint(0, len(self.labels) - 1))
@@ -566,7 +558,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                 r = np.random.beta(8.0, 8.0)  # mixup ratio, alpha=beta=8.0
                 img = (img * r + img2 * (1 - r)).astype(np.uint8)
                 labels = np.concatenate((labels, labels2), 0)
-            """
+            
         else:
             # Load image
             img, (h0, w0), (h, w) = load_image(self, index)
@@ -1141,34 +1133,82 @@ def bbox_ioa(box1, box2):
 
     # Intersection over box2 area
     return inter_area / box2_area
+        
+def crop(image, a, b):
+    h, w = image.shape[:2]
+    if w < a or h < b:
+        raise ValueError("img dimensions smaller than crop size")
 
-def cutmix(image, boxes, r_image, r_boxes):
-        # https://github.com/WongKinYiu/ScaledYOLOv4/issues/254
-        mixup_image = image.copy()
+    left = random.randint(0, w - a)
+    top = random.randint(0, h - b)
+
+    return image[top:top + b, left:left + a]
+
+def rescale(xc, yc, w, h, imw, imh):
+    x1 = int((xc - w / 2) * imw)
+    y1 = int((yc - h / 2) * imh)
+    x2 = int((xc + w / 2) * imw)
+    y2 = int((yc + h / 2) * imh)
+    return x1, y1, x2, y2
+
+def cutmix(image, b, r_image, r_b):
+        # modified from https://github.com/WongKinYiu/ScaledYOLOv4/issues/254
+        boxes = b.copy()
+        r_boxes = r_b.copy()
+       
+        # a lil bit of scaling for when labels are relative (i.e. a fraction of image size) instead of absolute
+        if np.any(boxes < 1):
+            for i, box in enumerate(boxes):
+                x1, y1, x2, y2 = rescale(box[1], box[2], box[3], box[4], image.shape[1], image.shape[0])
+                boxes[i] = [box[0], x1, y1, x2, y2]
+        if np.any(r_boxes < 1):
+            for i, box in enumerate(r_boxes):
+                x1, y1, x2, y2 = rescale(box[1], box[2], box[3], box[4], r_image.shape[1], r_image.shape[0])
+                r_boxes[i] = [box[0], x1, y1, x2, y2]
+    
+        cutmix_image = image.copy()
         imsize = min(image.shape[0], r_image.shape[0])
+
+        # pick part of image1 to insert image2
         x1, y1 = [int(random.uniform(imsize * 0.0, imsize * 0.45)) for _ in range(2)]
-        x2, y2 = [int(random.uniform(imsize * 0.55, imsize * 1.0)) for _ in range(2)]
+        x2, y2 = [int(random.uniform(imsize * 0.50, imsize * 0.8)) for _ in range(2)]
         
-        mixup_boxes = r_boxes.copy()
+        cutmix_boxes = r_boxes.copy()
         area = (r_boxes[:, 3] - r_boxes[:, 1]) * (r_boxes[:, 4] - r_boxes[:, 2])
+
+        # randomly select part of image2, plus shifting label boxes to match the selection
+        left = random.randint(0, r_image.shape[1] - (x2-x1))
+        top = random.randint(0, r_image.shape[0] - (y2-y1))
+        cutmix_boxes[:, [1,3]] += x1 - left
+        cutmix_boxes[:, [2,4]] += y1 - top
         
-        mixup_boxes[:, [1, 3]] = mixup_boxes[:, [1, 3]].clip(min=x1, max=x2)
-        mixup_boxes[:, [2, 4]] = mixup_boxes[:, [2, 4]].clip(min=y1, max=y2)
-        mixup_boxes = mixup_boxes.astype(np.int32)
-        #cropped w, h, area
-        w = mixup_boxes[:, 3] - mixup_boxes[:, 1]
-        h = mixup_boxes[:, 4] - mixup_boxes[:, 2]
+        cutmix_boxes[:, [1, 3]] = cutmix_boxes[:, [1, 3]].clip(min=x1, max=x2)
+        cutmix_boxes[:, [2, 4]] = cutmix_boxes[:, [2, 4]].clip(min=y1, max=y2)
+        cutmix_boxes = cutmix_boxes.astype(np.int32)
+    
+        # cropped w, h, area of r_image's bounding boxes
+        w = cutmix_boxes[:, 3] - cutmix_boxes[:, 1]
+        h = cutmix_boxes[:, 4] - cutmix_boxes[:, 2]
         area0 = w * h
         ar = np.maximum(w / (h + 1e-16), h / (w + 1e-16))
-        
-        mixup_boxes = mixup_boxes[np.where((w > 2) & (h > 2) & (area / (area0 + 1e-16) > 0.2) & (ar < 20))]
-        mixup_image[y1:y2, x1:x2] = (mixup_image[y1:y2, x1:x2] + r_image[y1:y2, x1:x2])/2
+    
+        # paste image2 onto image1
+        cutmix_boxes = cutmix_boxes[np.where((w > 2) & (h > 2) & (area / (area0 + 1e-16) > 0) & (ar < 50))]
+        # print(f"w={w}, h={h}, area={area}, area0={area0}, ar={ar}")
+        cutmix_image[y1:y2, x1:x2] = r_image[top:top + (y2-y1), left:left + (x2-x1)]
 
-        mixup_boxes = np.concatenate((boxes, mixup_boxes), axis=0)
-        return mixup_image, mixup_boxes
+        print(f"({x1}, {y1}, {x2}, {y2})")
+        # calculate obstructions of image1's labels: if over threshold, then do not label
+        obstructions = [cutmix_bbioa(np.asarray([x1, y1, x2, y2]), box[1:]) for box in boxes]
+        bu = []
+        for i, obstruction in enumerate(obstructions):
+            print(f"box {i + 1} ioa: {obstruction}")
+            if obstruction < 0.95:
+                bu.append(boxes[i])
+        if len(bu) != 0: cutmix_boxes = np.concatenate((bu, cutmix_boxes), axis=0)
+        return cutmix_image, cutmix_boxes
     
     
-
 def cutout(image, labels):
     # Applies image cutout augmentation https://arxiv.org/abs/1708.04552
     h, w = image.shape[:2]

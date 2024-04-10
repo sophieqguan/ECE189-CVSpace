@@ -1,3 +1,4 @@
+# data storage (data are not uploaded due to size limit. There are zip files in the gdrive.)
 data-storage/50-shot-dataset
 data-storage/bike-video
 data-storage/tool-video
@@ -11,6 +12,7 @@ data-storage/data.zip
 data-storage/TODO.txt
 data-storage/.env
 
+# misc. training data that are either 1) bad or 2) useless
 yolov7/coco/
 wandb/
 .ipynb_checkpoints/
