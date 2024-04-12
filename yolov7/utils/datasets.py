@@ -548,8 +548,15 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                 img, labels = load_mosaic9(self, index)
             shapes = None
 
+            # CutMix
+            if random.random() < 0.7:
+                if random.random() < 0.8:
+                    img2, labels2 = load_mosaic(self, random.randint(0, len(self.labels) - 1))
+                else:
+                    img2, labels2 = load_mosaic9(self, random.randint(0, len(self.labels) - 1))
+                img, labels = cutmix(img, labels, img2, labels2)
 
-            # MixUp https://arxiv.org/pdf/1710.09412.pdf
+            """ # MixUp https://arxiv.org/pdf/1710.09412.pdf
             if random.random() < hyp['mixup']:
                 if random.random() < 0.8:
                     img2, labels2 = load_mosaic(self, random.randint(0, len(self.labels) - 1))
@@ -558,6 +565,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                 r = np.random.beta(8.0, 8.0)  # mixup ratio, alpha=beta=8.0
                 img = (img * r + img2 * (1 - r)).astype(np.uint8)
                 labels = np.concatenate((labels, labels2), 0)
+            """
             
         else:
             # Load image
@@ -583,7 +591,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                                                  perspective=hyp['perspective'])
             
             
-            #img, labels = self.albumentations(img, labels)
+            # img, labels = self.albumentations(img, labels)
 
             # Augment colorspace
             augment_hsv(img, hgain=hyp['hsv_h'], sgain=hyp['hsv_s'], vgain=hyp['hsv_v'])
@@ -607,8 +615,8 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
         nL = len(labels)  # number of labels
         if nL:
             labels[:, 1:5] = xyxy2xywh(labels[:, 1:5])  # convert xyxy to xywh
-            labels[:, [2, 4]] /= img.shape[0]  # normalized height 0-1
-            labels[:, [1, 3]] /= img.shape[1]  # normalized width 0-1
+            labels[:, [2, 4]] = labels[:, [2, 4]] / img.shape[0]  # normalized height 0-1
+            labels[:, [1, 3]] = labels[:, [1, 3]] / img.shape[1]  # normalized width 0-1
 
         if self.augment:
             # flip up-down
@@ -1152,19 +1160,15 @@ def rescale(xc, yc, w, h, imw, imh):
     return x1, y1, x2, y2
 
 def cutmix(image, b, r_image, r_b):
+        '''
+        image: base image
+        b: base image bounding boxes (pixel xyxy format)
+        r_image: overlaying image
+        r_b: overlaying image bounding boxes (pixel xyxy format)
+        '''
         # modified from https://github.com/WongKinYiu/ScaledYOLOv4/issues/254
         boxes = b.copy()
         r_boxes = r_b.copy()
-       
-        # a lil bit of scaling for when labels are relative (i.e. a fraction of image size) instead of absolute
-        if np.any(boxes < 1):
-            for i, box in enumerate(boxes):
-                x1, y1, x2, y2 = rescale(box[1], box[2], box[3], box[4], image.shape[1], image.shape[0])
-                boxes[i] = [box[0], x1, y1, x2, y2]
-        if np.any(r_boxes < 1):
-            for i, box in enumerate(r_boxes):
-                x1, y1, x2, y2 = rescale(box[1], box[2], box[3], box[4], r_image.shape[1], r_image.shape[0])
-                r_boxes[i] = [box[0], x1, y1, x2, y2]
     
         cutmix_image = image.copy()
         imsize = min(image.shape[0], r_image.shape[0])
@@ -1197,15 +1201,41 @@ def cutmix(image, b, r_image, r_b):
         # print(f"w={w}, h={h}, area={area}, area0={area0}, ar={ar}")
         cutmix_image[y1:y2, x1:x2] = r_image[top:top + (y2-y1), left:left + (x2-x1)]
 
-        print(f"({x1}, {y1}, {x2}, {y2})")
+        # print(f"({x1}, {y1}, {x2}, {y2})")
         # calculate obstructions of image1's labels: if over threshold, then do not label
-        obstructions = [cutmix_bbioa(np.asarray([x1, y1, x2, y2]), box[1:]) for box in boxes]
+        obstructions = [bbox_ioa(np.asarray([x1, y1, x2, y2]), box[1:]) for box in boxes]
         bu = []
+        r = np.random.randint(30)
+        
+        """
         for i, obstruction in enumerate(obstructions):
-            print(f"box {i + 1} ioa: {obstruction}")
-            if obstruction < 0.95:
-                bu.append(boxes[i])
+            if obstruction < 0.85:
+                bu.append(np.asarray(boxes[i], dtype=int))
         if len(bu) != 0: cutmix_boxes = np.concatenate((bu, cutmix_boxes), axis=0)
+        """
+         
+        # debug version
+        with open(f'./test_images/img_rgb_{r}.txt', 'w') as f:
+            for i, obstruction in enumerate(obstructions):
+                f.write(f"box {i + 1} ioa: {obstruction} {boxes[i]}\n")
+                if obstruction < 0.85:
+                    bu.append(np.asarray(boxes[i], dtype=int))
+            if len(bu) != 0: cutmix_boxes = np.concatenate((bu, cutmix_boxes), axis=0)
+            f.write(f"final: {cutmix_boxes}")
+        
+        # debug draw
+        img_rgb = cv2.cvtColor(cutmix_image, cv2.COLOR_BGR2RGB)
+        for i, box in enumerate(cutmix_boxes):
+            box = np.asarray(box, dtype=int)
+            color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            cv2.rectangle(img_rgb, (box[1], box[2]), (box[3], box[4]), color, 2)
+            text = f"{box[0]}"
+            text_size, _ = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 1, 2)
+            cv2.putText(img_rgb, text, (box[1], box[4]), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2)
+
+        cv2.imwrite(f"./test_images/img_rgb_{r}.png", img_rgb)
+        print("im batman you killed my cat prepare to die")
+
         return cutmix_image, cutmix_boxes
     
     

@@ -8,4 +8,4 @@ Contains:
 - test results
 
 Does not contain:
-- Dataset (`data-storage/`)
+- Datasets (under `data-storage/`)
