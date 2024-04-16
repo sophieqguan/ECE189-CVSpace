@@ -17,3 +17,5 @@ yolov7/coco/
 wandb/
 .ipynb_checkpoints/
 runs/*/exp*
+runs/*/test*
+test_images/*

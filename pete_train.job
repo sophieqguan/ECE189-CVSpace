@@ -19,7 +19,7 @@ conda activate ece189_gpu
 cd $PBS_O_WORKDIR
 cd ./proj-pete
 
-run_name="AFT_CutMixUpdated_6"
+run_name="AFT_CMU_8"
 
 # Run the Python script [python ./training_32.py]
 python ./yolov7/train.py --batch 40 --epochs 100 --data ./data-storage/full_dataset/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp ./yolov7/data/hyp.scratch.tiny.yaml --name $run_name
