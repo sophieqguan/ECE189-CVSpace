@@ -1,209 +1,315 @@
-
-adjustable monkey wrench [632875] ==================================== 
-Total Frames: 3772
-picks: [   0   76  153  230  307  384  461  538  615  692  769  846  923 1000
- 1077 1154 1231 1308 1385 1462 1539 1616 1693 1770 1847 1924 2001 2078
- 2155 2232 2309 2386 2463 2540 2617 2694 2771 2848 2925 3002 3079 3156
- 3233 3310 3387 3464 3541 3618 3695 3772]
-Processed 0/3772 framesProcessed 100/3772 framesProcessed 200/3772 framesProcessed 300/3772 framesProcessed 400/3772 framesProcessed 500/3772 framesProcessed 600/3772 framesProcessed 700/3772 framesProcessed 800/3772 framesProcessed 900/3772 framesProcessed 1000/3772 framesProcessed 1100/3772 framesProcessed 1200/3772 framesProcessed 1300/3772 framesProcessed 1400/3772 framesProcessed 1500/3772 framesProcessed 1600/3772 framesProcessed 1700/3772 framesProcessed 1800/3772 framesProcessed 1900/3772 framesProcessed 2000/3772 framesProcessed 2100/3772 framesProcessed 2200/3772 framesProcessed 2300/3772 framesProcessed 2400/3772 framesProcessed 2500/3772 framesProcessed 2600/3772 framesProcessed 2700/3772 framesProcessed 2800/3772 framesProcessed 2900/3772 framesProcessed 3000/3772 framesProcessed 3100/3772 framesProcessed 3200/3772 framesProcessed 3300/3772 framesProcessed 3400/3772 framesProcessed 3500/3772 framesProcessed 3600/3772 framesProcessed 3700/3772 frames
-Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
-Shuffled
-50-shot-dataset/632875/obj_train_data/train/images/632875_003618.jpg
-Processed 0/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_003079.jpg
-Processed 5/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_000384.jpg
-Processed 10/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_002463.jpg
-Processed 15/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_000538.jpg
-Processed 20/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_001847.jpg
-Processed 25/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_001000.jpg
-Processed 30/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_002001.jpg
-Processed 35/49 frames50-shot-dataset/632875/obj_train_data/train/images/632875_001924.jpg
-Processed 40/49 frames50-shot-dataset/632875/obj_train_data/valid/images/632875_002309.jpg
-Processed 45/49 frames
-Frames split complete.
-
-monkey wrench [632959] ==================================== 
-Total Frames: 2875
-picks: [   0   58  117  176  234  293  352  410  469  528  586  645  704  762
-  821  880  938  997 1056 1114 1173 1232 1290 1349 1408 1466 1525 1584
- 1642 1701 1760 1818 1877 1936 1994 2053 2112 2170 2229 2288 2346 2405
- 2464 2522 2581 2640 2698 2757 2816 2875]
-Processed 0/2875 framesProcessed 100/2875 framesProcessed 200/2875 framesProcessed 300/2875 framesProcessed 400/2875 framesProcessed 500/2875 framesProcessed 600/2875 framesProcessed 700/2875 framesProcessed 800/2875 framesProcessed 900/2875 framesProcessed 1000/2875 framesProcessed 1100/2875 framesProcessed 1200/2875 framesProcessed 1300/2875 framesProcessed 1400/2875 framesProcessed 1500/2875 framesProcessed 1600/2875 framesProcessed 1700/2875 framesProcessed 1800/2875 framesProcessed 1900/2875 framesProcessed 2000/2875 framesProcessed 2100/2875 framesProcessed 2200/2875 framesProcessed 2300/2875 framesProcessed 2400/2875 framesProcessed 2500/2875 framesProcessed 2600/2875 framesProcessed 2700/2875 framesProcessed 2800/2875 frames
-Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
-Shuffled
-50-shot-dataset/632959/obj_train_data/train/images/632959_000821.jpg
-Processed 0/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000880.jpg
-Processed 5/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_001994.jpg
-Processed 10/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000000.jpg
-Processed 15/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000293.jpg
-Processed 20/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000645.jpg
-Processed 25/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000762.jpg
-Processed 30/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_001701.jpg
-Processed 35/49 frames50-shot-dataset/632959/obj_train_data/train/images/632959_000410.jpg
-Processed 40/49 frames50-shot-dataset/632959/obj_train_data/valid/images/632959_000586.jpg
-Processed 45/49 frames
-Frames split complete.
-
-allen key [632859] ==================================== 
+Video FPS: 60
 Total Frames: 3741
-picks: [   0   76  152  229  305  381  458  534  610  687  763  839  916  992
- 1068 1145 1221 1297 1374 1450 1526 1603 1679 1755 1832 1908 1985 2061
- 2137 2214 2290 2366 2443 2519 2595 2672 2748 2824 2901 2977 3053 3130
- 3206 3282 3359 3435 3511 3588 3664 3741]
 Processed 0/3741 framesProcessed 100/3741 framesProcessed 200/3741 framesProcessed 300/3741 framesProcessed 400/3741 framesProcessed 500/3741 framesProcessed 600/3741 framesProcessed 700/3741 framesProcessed 800/3741 framesProcessed 900/3741 framesProcessed 1000/3741 framesProcessed 1100/3741 framesProcessed 1200/3741 framesProcessed 1300/3741 framesProcessed 1400/3741 framesProcessed 1500/3741 framesProcessed 1600/3741 framesProcessed 1700/3741 framesProcessed 1800/3741 framesProcessed 1900/3741 framesProcessed 2000/3741 framesProcessed 2100/3741 framesProcessed 2200/3741 framesProcessed 2300/3741 framesProcessed 2400/3741 framesProcessed 2500/3741 framesProcessed 2600/3741 framesProcessed 2700/3741 framesProcessed 2800/3741 framesProcessed 2900/3741 framesProcessed 3000/3741 framesProcessed 3100/3741 framesProcessed 3200/3741 framesProcessed 3300/3741 framesProcessed 3400/3741 framesProcessed 3500/3741 framesProcessed 3600/3741 framesProcessed 3700/3741 frames
 Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
+Reduced Total Frames: 416
+Training: 332
+Testing: 41
 Shuffled
-50-shot-dataset/632859/obj_train_data/train/images/632859_003588.jpg
-Processed 0/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_002443.jpg
-Processed 5/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_001526.jpg
-Processed 10/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_002290.jpg
-Processed 15/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_000534.jpg
-Processed 20/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_001450.jpg
-Processed 25/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_002672.jpg
-Processed 30/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_001374.jpg
-Processed 35/49 frames50-shot-dataset/632859/obj_train_data/train/images/632859_002748.jpg
-Processed 40/49 frames50-shot-dataset/632859/obj_train_data/valid/images/632859_000305.jpg
-Processed 45/49 frames
+Processed 0/416 framesProcessed 100/416 framesProcessed 200/416 framesProcessed 300/416 framesProcessed 400/416 frames
 Frames split complete.
-
-double-flats wrench [632955] ==================================== 
+YAML file 'data.yaml' created successfully.
+Video FPS: 60
+Total Frames: 3772
+Processed 0/3772 framesProcessed 100/3772 framesProcessed 200/3772 framesProcessed 300/3772 framesProcessed 400/3772 framesProcessed 500/3772 framesProcessed 600/3772 framesProcessed 700/3772 framesProcessed 800/3772 framesProcessed 900/3772 framesProcessed 1000/3772 framesProcessed 1100/3772 framesProcessed 1200/3772 framesProcessed 1300/3772 framesProcessed 1400/3772 framesProcessed 1500/3772 framesProcessed 1600/3772 framesProcessed 1700/3772 framesProcessed 1800/3772 framesProcessed 1900/3772 framesProcessed 2000/3772 framesProcessed 2100/3772 framesProcessed 2200/3772 framesProcessed 2300/3772 framesProcessed 2400/3772 framesProcessed 2500/3772 framesProcessed 2600/3772 framesProcessed 2700/3772 framesProcessed 2800/3772 framesProcessed 2900/3772 framesProcessed 3000/3772 framesProcessed 3100/3772 framesProcessed 3200/3772 framesProcessed 3300/3772 framesProcessed 3400/3772 framesProcessed 3500/3772 framesProcessed 3600/3772 framesProcessed 3700/3772 frames
+Frames extraction complete.
+Reduced Total Frames: 420
+Training: 336
+Testing: 42
+Shuffled
+Processed 0/420 framesProcessed 100/420 framesProcessed 200/420 framesProcessed 300/420 framesProcessed 400/420 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2669
+Processed 0/2669 framesProcessed 100/2669 framesProcessed 200/2669 framesProcessed 300/2669 framesProcessed 400/2669 framesProcessed 500/2669 framesProcessed 600/2669 framesProcessed 700/2669 framesProcessed 800/2669 framesProcessed 900/2669 framesProcessed 1000/2669 framesProcessed 1100/2669 framesProcessed 1200/2669 framesProcessed 1300/2669 framesProcessed 1400/2669 framesProcessed 1500/2669 framesProcessed 1600/2669 framesProcessed 1700/2669 framesProcessed 1800/2669 framesProcessed 1900/2669 framesProcessed 2000/2669 framesProcessed 2100/2669 framesProcessed 2200/2669 framesProcessed 2300/2669 framesProcessed 2400/2669 framesProcessed 2500/2669 framesProcessed 2600/2669 frames
+Frames extraction complete.
+Reduced Total Frames: 297
+Training: 237
+Testing: 29
+Shuffled
+Processed 0/297 framesProcessed 100/297 framesProcessed 200/297 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 60
 Total Frames: 3761
-picks: [   0   76  153  230  307  383  460  537  614  690  767  844  921  997
- 1074 1151 1228 1304 1381 1458 1535 1611 1688 1765 1842 1918 1995 2072
- 2149 2225 2302 2379 2456 2532 2609 2686 2763 2839 2916 2993 3070 3146
- 3223 3300 3377 3453 3530 3607 3684 3761]
 Processed 0/3761 framesProcessed 100/3761 framesProcessed 200/3761 framesProcessed 300/3761 framesProcessed 400/3761 framesProcessed 500/3761 framesProcessed 600/3761 framesProcessed 700/3761 framesProcessed 800/3761 framesProcessed 900/3761 framesProcessed 1000/3761 framesProcessed 1100/3761 framesProcessed 1200/3761 framesProcessed 1300/3761 framesProcessed 1400/3761 framesProcessed 1500/3761 framesProcessed 1600/3761 framesProcessed 1700/3761 framesProcessed 1800/3761 framesProcessed 1900/3761 framesProcessed 2000/3761 framesProcessed 2100/3761 framesProcessed 2200/3761 framesProcessed 2300/3761 framesProcessed 2400/3761 framesProcessed 2500/3761 framesProcessed 2600/3761 framesProcessed 2700/3761 framesProcessed 2800/3761 framesProcessed 2900/3761 framesProcessed 3000/3761 framesProcessed 3100/3761 framesProcessed 3200/3761 framesProcessed 3300/3761 framesProcessed 3400/3761 framesProcessed 3500/3761 framesProcessed 3600/3761 framesProcessed 3700/3761 frames
 Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
+Reduced Total Frames: 418
+Training: 334
+Testing: 41
 Shuffled
-50-shot-dataset/632955/obj_train_data/train/images/632955_000767.jpg
-Processed 0/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_000997.jpg
-Processed 5/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_002763.jpg
-Processed 10/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_001151.jpg
-Processed 15/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_001688.jpg
-Processed 20/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_003607.jpg
-Processed 25/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_000307.jpg
-Processed 30/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_001381.jpg
-Processed 35/49 frames50-shot-dataset/632955/obj_train_data/train/images/632955_002993.jpg
-Processed 40/49 frames50-shot-dataset/632955/obj_train_data/valid/images/632955_000460.jpg
-Processed 45/49 frames
+Processed 0/418 framesProcessed 100/418 framesProcessed 200/418 framesProcessed 300/418 framesProcessed 400/418 frames
 Frames split complete.
-
-pedal lockring wrench [632963] ==================================== 
-Total Frames: 2841
-picks: [   0   57  115  173  231  289  347  405  463  521  579  637  695  753
-  811  869  927  985 1043 1101 1159 1217 1275 1333 1391 1449 1507 1565
- 1623 1681 1739 1797 1855 1913 1971 2029 2087 2145 2203 2261 2319 2377
- 2435 2493 2551 2609 2667 2725 2783 2841]
-Processed 0/2841 framesProcessed 100/2841 framesProcessed 200/2841 framesProcessed 300/2841 framesProcessed 400/2841 framesProcessed 500/2841 framesProcessed 600/2841 framesProcessed 700/2841 framesProcessed 800/2841 framesProcessed 900/2841 framesProcessed 1000/2841 framesProcessed 1100/2841 framesProcessed 1200/2841 framesProcessed 1300/2841 framesProcessed 1400/2841 framesProcessed 1500/2841 framesProcessed 1600/2841 framesProcessed 1700/2841 framesProcessed 1800/2841 framesProcessed 1900/2841 framesProcessed 2000/2841 framesProcessed 2100/2841 framesProcessed 2200/2841 framesProcessed 2300/2841 framesProcessed 2400/2841 framesProcessed 2500/2841 framesProcessed 2600/2841 framesProcessed 2700/2841 framesProcessed 2800/2841 frames
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2874
+Processed 0/2874 framesProcessed 100/2874 framesProcessed 200/2874 framesProcessed 300/2874 framesProcessed 400/2874 framesProcessed 500/2874 framesProcessed 600/2874 framesProcessed 700/2874 framesProcessed 800/2874 framesProcessed 900/2874 framesProcessed 1000/2874 framesProcessed 1100/2874 framesProcessed 1200/2874 framesProcessed 1300/2874 framesProcessed 1400/2874 framesProcessed 1500/2874 framesProcessed 1600/2874 framesProcessed 1700/2874 framesProcessed 1800/2874 framesProcessed 1900/2874 framesProcessed 2000/2874 framesProcessed 2100/2874 framesProcessed 2200/2874 framesProcessed 2300/2874 framesProcessed 2400/2874 framesProcessed 2500/2874 framesProcessed 2600/2874 framesProcessed 2700/2874 framesProcessed 2800/2874 frames
 Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
+Reduced Total Frames: 320
+Training: 256
+Testing: 32
 Shuffled
-50-shot-dataset/632963/obj_train_data/train/images/632963_002435.jpg
-Processed 0/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_000695.jpg
-Processed 5/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_002377.jpg
-Processed 10/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_001159.jpg
-Processed 15/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_001855.jpg
-Processed 20/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_002783.jpg
-Processed 25/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_000463.jpg
-Processed 30/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_000173.jpg
-Processed 35/49 frames50-shot-dataset/632963/obj_train_data/train/images/632963_001739.jpg
-Processed 40/49 frames50-shot-dataset/632963/obj_train_data/valid/images/632963_001275.jpg
-Processed 45/49 frames
+Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
 Frames split complete.
-
-crank remover [632964] ==================================== 
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2875
+Processed 0/2875 framesProcessed 100/2875 framesProcessed 200/2875 framesProcessed 300/2875 framesProcessed 400/2875 framesProcessed 500/2875 framesProcessed 600/2875 framesProcessed 700/2875 framesProcessed 800/2875 framesProcessed 900/2875 framesProcessed 1000/2875 framesProcessed 1100/2875 framesProcessed 1200/2875 framesProcessed 1300/2875 framesProcessed 1400/2875 framesProcessed 1500/2875 framesProcessed 1600/2875 framesProcessed 1700/2875 framesProcessed 1800/2875 framesProcessed 1900/2875 framesProcessed 2000/2875 framesProcessed 2100/2875 framesProcessed 2200/2875 framesProcessed 2300/2875 framesProcessed 2400/2875 framesProcessed 2500/2875 framesProcessed 2600/2875 framesProcessed 2700/2875 framesProcessed 2800/2875 frames
+Frames extraction complete.
+Reduced Total Frames: 320
+Training: 256
+Testing: 32
+Shuffled
+Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2863
+Processed 0/2863 framesProcessed 100/2863 framesProcessed 200/2863 framesProcessed 300/2863 framesProcessed 400/2863 framesProcessed 500/2863 framesProcessed 600/2863 framesProcessed 700/2863 framesProcessed 800/2863 framesProcessed 900/2863 framesProcessed 1000/2863 framesProcessed 1100/2863 framesProcessed 1200/2863 framesProcessed 1300/2863 framesProcessed 1400/2863 framesProcessed 1500/2863 framesProcessed 1600/2863 framesProcessed 1700/2863 framesProcessed 1800/2863 framesProcessed 1900/2863 framesProcessed 2000/2863 framesProcessed 2100/2863 framesProcessed 2200/2863 framesProcessed 2300/2863 framesProcessed 2400/2863 framesProcessed 2500/2863 framesProcessed 2600/2863 framesProcessed 2700/2863 framesProcessed 2800/2863 frames
+Frames extraction complete.
+Reduced Total Frames: 319
+Training: 255
+Testing: 31
+Shuffled
+Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
 Total Frames: 2842
-picks: [   0   58  116  174  232  290  348  406  464  522  580  638  696  754
-  812  870  928  986 1044 1102 1160 1218 1276 1334 1392 1450 1508 1566
- 1624 1682 1740 1798 1856 1914 1972 2030 2088 2146 2204 2262 2320 2378
- 2436 2494 2552 2610 2668 2726 2784 2842]
 Processed 0/2842 framesProcessed 100/2842 framesProcessed 200/2842 framesProcessed 300/2842 framesProcessed 400/2842 framesProcessed 500/2842 framesProcessed 600/2842 framesProcessed 700/2842 framesProcessed 800/2842 framesProcessed 900/2842 framesProcessed 1000/2842 framesProcessed 1100/2842 framesProcessed 1200/2842 framesProcessed 1300/2842 framesProcessed 1400/2842 framesProcessed 1500/2842 framesProcessed 1600/2842 framesProcessed 1700/2842 framesProcessed 1800/2842 framesProcessed 1900/2842 framesProcessed 2000/2842 framesProcessed 2100/2842 framesProcessed 2200/2842 framesProcessed 2300/2842 framesProcessed 2400/2842 framesProcessed 2500/2842 framesProcessed 2600/2842 framesProcessed 2700/2842 framesProcessed 2800/2842 frames
 Frames extraction complete.
-Reduced Total Frames: 50
-Training: 40\Validation: 10.0
+Reduced Total Frames: 316
+Training: 252
+Testing: 31
 Shuffled
-50-shot-dataset/632964/obj_train_data/train/images/632964_000232.jpg
-Processed 0/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_000870.jpg
-Processed 5/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_000638.jpg
-Processed 10/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_000580.jpg
-Processed 15/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_001044.jpg
-Processed 20/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_002378.jpg
-Processed 25/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_001276.jpg
-Processed 30/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_000116.jpg
-Processed 35/49 frames50-shot-dataset/632964/obj_train_data/train/images/632964_001682.jpg
-Processed 40/49 frames50-shot-dataset/632964/obj_train_data/valid/images/632964_002610.jpg
-Processed 45/49 frames
+Processed 0/316 framesProcessed 100/316 framesProcessed 200/316 framesProcessed 300/316 frames
 Frames split complete.
-base
-Working on data/632875/obj_train_data
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2841
+Processed 0/2841 framesProcessed 100/2841 framesProcessed 200/2841 framesProcessed 300/2841 framesProcessed 400/2841 framesProcessed 500/2841 framesProcessed 600/2841 framesProcessed 700/2841 framesProcessed 800/2841 framesProcessed 900/2841 framesProcessed 1000/2841 framesProcessed 1100/2841 framesProcessed 1200/2841 framesProcessed 1300/2841 framesProcessed 1400/2841 framesProcessed 1500/2841 framesProcessed 1600/2841 framesProcessed 1700/2841 framesProcessed 1800/2841 framesProcessed 1900/2841 framesProcessed 2000/2841 framesProcessed 2100/2841 framesProcessed 2200/2841 framesProcessed 2300/2841 framesProcessed 2400/2841 framesProcessed 2500/2841 framesProcessed 2600/2841 framesProcessed 2700/2841 framesProcessed 2800/2841 frames
+Frames extraction complete.
+Reduced Total Frames: 316
+Training: 252
+Testing: 31
+Shuffled
+Processed 0/316 framesProcessed 100/316 framesProcessed 200/316 framesProcessed 300/316 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2867
+Processed 0/2867 framesProcessed 100/2867 framesProcessed 200/2867 framesProcessed 300/2867 framesProcessed 400/2867 framesProcessed 500/2867 framesProcessed 600/2867 framesProcessed 700/2867 framesProcessed 800/2867 framesProcessed 900/2867 framesProcessed 1000/2867 framesProcessed 1100/2867 framesProcessed 1200/2867 framesProcessed 1300/2867 framesProcessed 1400/2867 framesProcessed 1500/2867 framesProcessed 1600/2867 framesProcessed 1700/2867 framesProcessed 1800/2867 framesProcessed 1900/2867 framesProcessed 2000/2867 framesProcessed 2100/2867 framesProcessed 2200/2867 framesProcessed 2300/2867 framesProcessed 2400/2867 framesProcessed 2500/2867 framesProcessed 2600/2867 framesProcessed 2700/2867 framesProcessed 2800/2867 frames
+Frames extraction complete.
+Reduced Total Frames: 319
+Training: 255
+Testing: 31
+Shuffled
+Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2845
+Processed 0/2845 framesProcessed 100/2845 framesProcessed 200/2845 framesProcessed 300/2845 framesProcessed 400/2845 framesProcessed 500/2845 framesProcessed 600/2845 framesProcessed 700/2845 framesProcessed 800/2845 framesProcessed 900/2845 framesProcessed 1000/2845 framesProcessed 1100/2845 framesProcessed 1200/2845 framesProcessed 1300/2845 framesProcessed 1400/2845 framesProcessed 1500/2845 framesProcessed 1600/2845 framesProcessed 1700/2845 framesProcessed 1800/2845 framesProcessed 1900/2845 framesProcessed 2000/2845 framesProcessed 2100/2845 framesProcessed 2200/2845 framesProcessed 2300/2845 framesProcessed 2400/2845 framesProcessed 2500/2845 framesProcessed 2600/2845 framesProcessed 2700/2845 framesProcessed 2800/2845 frames
+Frames extraction complete.
+Reduced Total Frames: 317
+Training: 253
+Testing: 31
+Shuffled
+Processed 0/317 framesProcessed 100/317 framesProcessed 200/317 framesProcessed 300/317 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2870
+Processed 0/2870 framesProcessed 100/2870 framesProcessed 200/2870 framesProcessed 300/2870 framesProcessed 400/2870 framesProcessed 500/2870 framesProcessed 600/2870 framesProcessed 700/2870 framesProcessed 800/2870 framesProcessed 900/2870 framesProcessed 1000/2870 framesProcessed 1100/2870 framesProcessed 1200/2870 framesProcessed 1300/2870 framesProcessed 1400/2870 framesProcessed 1500/2870 framesProcessed 1600/2870 framesProcessed 1700/2870 framesProcessed 1800/2870 framesProcessed 1900/2870 framesProcessed 2000/2870 framesProcessed 2100/2870 framesProcessed 2200/2870 framesProcessed 2300/2870 framesProcessed 2400/2870 framesProcessed 2500/2870 framesProcessed 2600/2870 framesProcessed 2700/2870 framesProcessed 2800/2870 frames
+Frames extraction complete.
+Reduced Total Frames: 319
+Training: 255
+Testing: 31
+Shuffled
+Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2903
+Processed 0/2903 framesProcessed 100/2903 framesProcessed 200/2903 framesProcessed 300/2903 framesProcessed 400/2903 framesProcessed 500/2903 framesProcessed 600/2903 framesProcessed 700/2903 framesProcessed 800/2903 framesProcessed 900/2903 framesProcessed 1000/2903 framesProcessed 1100/2903 framesProcessed 1200/2903 framesProcessed 1300/2903 framesProcessed 1400/2903 framesProcessed 1500/2903 framesProcessed 1600/2903 framesProcessed 1700/2903 framesProcessed 1800/2903 framesProcessed 1900/2903 framesProcessed 2000/2903 framesProcessed 2100/2903 framesProcessed 2200/2903 framesProcessed 2300/2903 framesProcessed 2400/2903 framesProcessed 2500/2903 framesProcessed 2600/2903 framesProcessed 2700/2903 framesProcessed 2800/2903 framesProcessed 2900/2903 frames
+Frames extraction complete.
+Reduced Total Frames: 323
+Training: 258
+Testing: 32
+Shuffled
+Processed 0/323 framesProcessed 100/323 framesProcessed 200/323 framesProcessed 300/323 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2898
+Processed 0/2898 framesProcessed 100/2898 framesProcessed 200/2898 framesProcessed 300/2898 framesProcessed 400/2898 framesProcessed 500/2898 framesProcessed 600/2898 framesProcessed 700/2898 framesProcessed 800/2898 framesProcessed 900/2898 framesProcessed 1000/2898 framesProcessed 1100/2898 framesProcessed 1200/2898 framesProcessed 1300/2898 framesProcessed 1400/2898 framesProcessed 1500/2898 framesProcessed 1600/2898 framesProcessed 1700/2898 framesProcessed 1800/2898 framesProcessed 1900/2898 framesProcessed 2000/2898 framesProcessed 2100/2898 framesProcessed 2200/2898 framesProcessed 2300/2898 framesProcessed 2400/2898 framesProcessed 2500/2898 framesProcessed 2600/2898 framesProcessed 2700/2898 framesProcessed 2800/2898 frames
+Frames extraction complete.
+Reduced Total Frames: 322
+Training: 257
+Testing: 32
+Shuffled
+Processed 0/322 framesProcessed 100/322 framesProcessed 200/322 framesProcessed 300/322 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2874
+Processed 0/2874 framesProcessed 100/2874 framesProcessed 200/2874 framesProcessed 300/2874 framesProcessed 400/2874 framesProcessed 500/2874 framesProcessed 600/2874 framesProcessed 700/2874 framesProcessed 800/2874 framesProcessed 900/2874 framesProcessed 1000/2874 framesProcessed 1100/2874 framesProcessed 1200/2874 framesProcessed 1300/2874 framesProcessed 1400/2874 framesProcessed 1500/2874 framesProcessed 1600/2874 framesProcessed 1700/2874 framesProcessed 1800/2874 framesProcessed 1900/2874 framesProcessed 2000/2874 framesProcessed 2100/2874 framesProcessed 2200/2874 framesProcessed 2300/2874 framesProcessed 2400/2874 framesProcessed 2500/2874 framesProcessed 2600/2874 framesProcessed 2700/2874 framesProcessed 2800/2874 frames
+Frames extraction complete.
+Reduced Total Frames: 320
+Training: 256
+Testing: 32
+Shuffled
+Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 25
+Total Frames: 2880
+Processed 0/2880 framesProcessed 100/2880 framesProcessed 200/2880 framesProcessed 300/2880 framesProcessed 400/2880 framesProcessed 500/2880 framesProcessed 600/2880 framesProcessed 700/2880 framesProcessed 800/2880 framesProcessed 900/2880 framesProcessed 1000/2880 framesProcessed 1100/2880 framesProcessed 1200/2880 framesProcessed 1300/2880 framesProcessed 1400/2880 framesProcessed 1500/2880 framesProcessed 1600/2880 framesProcessed 1700/2880 framesProcessed 1800/2880 framesProcessed 1900/2880 framesProcessed 2000/2880 framesProcessed 2100/2880 framesProcessed 2200/2880 framesProcessed 2300/2880 framesProcessed 2400/2880 framesProcessed 2500/2880 framesProcessed 2600/2880 framesProcessed 2700/2880 framesProcessed 2800/2880 frames
+Frames extraction complete.
+Reduced Total Frames: 320
+Training: 256
+Testing: 32
+Shuffled
+Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Video FPS: 59
+Total Frames: 5935
+Processed 0/5935 framesProcessed 100/5935 framesProcessed 200/5935 framesProcessed 300/5935 framesProcessed 400/5935 framesProcessed 500/5935 framesProcessed 600/5935 framesProcessed 700/5935 framesProcessed 800/5935 framesProcessed 900/5935 framesProcessed 1000/5935 framesProcessed 1100/5935 framesProcessed 1200/5935 framesProcessed 1300/5935 framesProcessed 1400/5935 framesProcessed 1500/5935 framesProcessed 1600/5935 framesProcessed 1700/5935 framesProcessed 1800/5935 framesProcessed 1900/5935 framesProcessed 2000/5935 framesProcessed 2100/5935 framesProcessed 2200/5935 framesProcessed 2300/5935 framesProcessed 2400/5935 framesProcessed 2500/5935 framesProcessed 2600/5935 framesProcessed 2700/5935 framesProcessed 2800/5935 framesProcessed 2900/5935 framesProcessed 3000/5935 framesProcessed 3100/5935 framesProcessed 3200/5935 framesProcessed 3300/5935 framesProcessed 3400/5935 framesProcessed 3500/5935 framesProcessed 3600/5935 framesProcessed 3700/5935 framesProcessed 3800/5935 framesProcessed 3900/5935 framesProcessed 4000/5935 framesProcessed 4100/5935 framesProcessed 4200/5935 framesProcessed 4300/5935 framesProcessed 4400/5935 framesProcessed 4500/5935 framesProcessed 4600/5935 framesProcessed 4700/5935 framesProcessed 4800/5935 framesProcessed 4900/5935 framesProcessed 5000/5935 framesProcessed 5100/5935 framesProcessed 5200/5935 framesProcessed 5300/5935 framesProcessed 5400/5935 framesProcessed 5500/5935 framesProcessed 5600/5935 framesProcessed 5700/5935 framesProcessed 5800/5935 framesProcessed 5900/5935 frames
+Frames extraction complete.
+Reduced Total Frames: 660
+Training: 528
+Testing: 66
+Shuffled
+Processed 0/660 framesProcessed 100/660 framesProcessed 200/660 framesProcessed 300/660 framesProcessed 400/660 framesProcessed 500/660 framesProcessed 600/660 frames
+Frames split complete.
+YAML file 'data.yaml' created successfully.
+Fetching folder structure
+Working on ./data/robo_hand
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on data/632949/obj_train_data
+Working on ./data/632859
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on data/632959/obj_train_data
+Working on ./data/632875
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on data/robo_hand/obj_train_data
+Working on ./data/632949
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-base + novel
-Working on 50-shot-dataset/632875
+Working on ./data/632955
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/632959
+Copying completed.
+Copying completed.
+Working on ./data/632968
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/robo_hand
+Copying completed.
+Copying completed.
+Working on ./data/632959
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/632859
+Copying completed.
+Copying completed.
+Working on ./data/632960
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/632955
+Copying completed.
+Copying completed.
+Working on ./data/632964
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/632963
+Copying completed.
+Copying completed.
+Working on ./data/632963
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
-Working on 50-shot-dataset/632964
+Copying completed.
+Copying completed.
+Working on ./data/632877
 Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/632961
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/632962
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/616459
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/618275
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/677203
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/677248
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/679544
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Entering ./data/obj_train_data/test/labels:

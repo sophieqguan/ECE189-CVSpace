@@ -14,3 +14,4 @@
 618275 bike-video/Pedal.mp4
 677203 bike-video/Spindle.mp4
 677248 bike-video/DoubleFlatBottomBracket.mp4
+679544 bike-video/bottomBracketInstall.MOV

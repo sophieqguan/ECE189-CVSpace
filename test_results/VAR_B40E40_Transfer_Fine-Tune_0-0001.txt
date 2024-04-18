@@ -1,0 +1,22 @@
+Namespace(weights=['./runs/train/VAR_B40E40_Transfer_Fine-Tune_0-0001/weights/best.pt'], data='./data-storage/data/obj_train_data/data_test.yaml', batch_size=40, img_size=640, conf_thres=0.4, iou_thres=0.7, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='VAR_B40E40_Transfer_Fine-Tune_0-0001', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+[34m[1mval: [0mWARNING: Ignoring corrupted image and/or label data-storage/data/obj_train_data/test/images/CARDS_LIVINGROOM_T_B_frame_1750_jpg.rf.94d103988a590739e9d59eee25ffba33.jpg: duplicate labels
+                 all        1076        2581       0.981       0.912       0.934       0.793
+adjustable monkey wrench        1076         133       0.936       0.879       0.976       0.834
+       monkey wrench        1076         185       0.997       0.962       0.967       0.867
+           allen key        1076         104           1       0.931       0.957       0.827
+ double-flats wrench        1076         108       0.992       0.639       0.707       0.584
+                hand        1076        1620       0.991       0.954       0.967        0.75
+pedal lockring wrench        1076         108       0.971       0.942       0.947       0.818
+       crank remover        1076          62           1           1           1       0.895
+             spindle        1076          55       0.979       0.859       0.894       0.718
+doubleFlatsBottomBracket        1076          53       0.974       0.981       0.986        0.86
+                bolt        1076          61           1       0.869       0.874       0.745
+               pedal        1076          54       0.997       0.981       0.986        0.88
+            crankArm        1076          38       0.939       0.947        0.95       0.738
+Speed: 1.1/0.8/1.9 ms inference/NMS/total per 640x640 image at batch-size 40
+Results saved to runs/test/VAR_B40E40_Transfer_Fine-Tune_0-0001

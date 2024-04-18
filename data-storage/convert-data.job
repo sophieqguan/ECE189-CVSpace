@@ -19,7 +19,7 @@ cd proj-pete/data-storage
 # Usage 1: python3 convert.py <input_video_path> <annotation_folder_path> <output_folder_path> [-z]")
 # Usage 2: python3 fetchFromCVAT.py [job_id]
 
-jobs=("632859" "632875" "632949" "632955" "632968" "632959" "632960" "632964" "632963" "632877" "632961" "632962")
+jobs=("632859" "632875" "632949" "632955" "632968" "632959" "632960" "632964" "632963" "632877" "632961" "632962" "616459" "618275" "677203" "677248" "679544") 
 
 output="data"
 input="data"
@@ -36,5 +36,5 @@ rm -rf "./$output/obj_train_data/train"
 rm -rf "./$output/obj_train_data/valid"
 
 python mergeData.py --i "./$input" --o "./$output"
-python tally.py 
+# python tally.py 
 

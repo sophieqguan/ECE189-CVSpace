@@ -1,0 +1,161 @@
+freezing model.0.conv.weight
+freezing model.0.bn.weight
+freezing model.0.bn.bias
+freezing model.1.conv.weight
+freezing model.1.bn.weight
+freezing model.1.bn.bias
+freezing model.2.conv.weight
+freezing model.2.bn.weight
+freezing model.2.bn.bias
+freezing model.3.conv.weight
+freezing model.3.bn.weight
+freezing model.3.bn.bias
+freezing model.4.conv.weight
+freezing model.4.bn.weight
+freezing model.4.bn.bias
+freezing model.5.conv.weight
+freezing model.5.bn.weight
+freezing model.5.bn.bias
+freezing model.7.conv.weight
+freezing model.7.bn.weight
+freezing model.7.bn.bias
+freezing model.9.conv.weight
+freezing model.9.bn.weight
+freezing model.9.bn.bias
+freezing model.10.conv.weight
+freezing model.10.bn.weight
+freezing model.10.bn.bias
+freezing model.11.conv.weight
+freezing model.11.bn.weight
+freezing model.11.bn.bias
+freezing model.12.conv.weight
+freezing model.12.bn.weight
+freezing model.12.bn.bias
+freezing model.14.conv.weight
+freezing model.14.bn.weight
+freezing model.14.bn.bias
+freezing model.16.conv.weight
+freezing model.16.bn.weight
+freezing model.16.bn.bias
+freezing model.17.conv.weight
+freezing model.17.bn.weight
+freezing model.17.bn.bias
+freezing model.18.conv.weight
+freezing model.18.bn.weight
+freezing model.18.bn.bias
+freezing model.19.conv.weight
+freezing model.19.bn.weight
+freezing model.19.bn.bias
+freezing model.21.conv.weight
+freezing model.21.bn.weight
+freezing model.21.bn.bias
+freezing model.23.conv.weight
+freezing model.23.bn.weight
+freezing model.23.bn.bias
+freezing model.24.conv.weight
+freezing model.24.bn.weight
+freezing model.24.bn.bias
+freezing model.25.conv.weight
+freezing model.25.bn.weight
+freezing model.25.bn.bias
+freezing model.26.conv.weight
+freezing model.26.bn.weight
+freezing model.26.bn.bias
+freezing model.28.conv.weight
+freezing model.28.bn.weight
+freezing model.28.bn.bias
+freezing model.29.conv.weight
+freezing model.29.bn.weight
+freezing model.29.bn.bias
+freezing model.30.conv.weight
+freezing model.30.bn.weight
+freezing model.30.bn.bias
+freezing model.35.conv.weight
+freezing model.35.bn.weight
+freezing model.35.bn.bias
+freezing model.37.conv.weight
+freezing model.37.bn.weight
+freezing model.37.bn.bias
+freezing model.38.conv.weight
+freezing model.38.bn.weight
+freezing model.38.bn.bias
+freezing model.40.conv.weight
+freezing model.40.bn.weight
+freezing model.40.bn.bias
+freezing model.42.conv.weight
+freezing model.42.bn.weight
+freezing model.42.bn.bias
+freezing model.43.conv.weight
+freezing model.43.bn.weight
+freezing model.43.bn.bias
+freezing model.44.conv.weight
+freezing model.44.bn.weight
+freezing model.44.bn.bias
+freezing model.45.conv.weight
+freezing model.45.bn.weight
+freezing model.45.bn.bias
+freezing model.47.conv.weight
+freezing model.47.bn.weight
+freezing model.47.bn.bias
+freezing model.48.conv.weight
+freezing model.48.bn.weight
+freezing model.48.bn.bias
+freezing model.50.conv.weight
+freezing model.50.bn.weight
+freezing model.50.bn.bias
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.86, Best Possible Recall (BPR) = 0.9951
+                 all        1097        2595       0.354       0.343       0.212      0.0882
+                 all        1097        2595       0.608       0.414       0.447       0.236
+                 all        1097        2595       0.644       0.543         0.6       0.282
+                 all        1097        2595       0.525       0.603        0.55       0.252
+                 all        1097        2595       0.768       0.646       0.735       0.385
+                 all        1097        2595       0.869       0.718       0.833       0.502
+                 all        1097        2595       0.851       0.726       0.825       0.518
+                 all        1097        2595       0.903       0.765       0.872       0.562
+                 all        1097        2595       0.872       0.805       0.889       0.574
+                 all        1097        2595       0.876       0.844         0.9       0.612
+                 all        1097        2595        0.92       0.838       0.919       0.637
+                 all        1097        2595       0.916       0.814       0.908       0.613
+                 all        1097        2595       0.879       0.836       0.916        0.65
+                 all        1097        2595       0.914       0.842       0.924       0.641
+                 all        1097        2595       0.907       0.874        0.93       0.653
+                 all        1097        2595       0.952       0.849       0.942       0.661
+                 all        1097        2595       0.933       0.858       0.939       0.671
+                 all        1097        2595       0.921       0.875       0.944       0.695
+                 all        1097        2595       0.952        0.86       0.943         0.7
+                 all        1097        2595       0.933       0.862       0.949       0.696
+                 all        1097        2595       0.925       0.871       0.945       0.702
+                 all        1097        2595       0.935       0.871       0.948       0.715
+                 all        1097        2595       0.955       0.868       0.947       0.719
+                 all        1097        2595       0.937       0.866       0.947       0.704
+                 all        1097        2595       0.917       0.887       0.952       0.736
+                 all        1097        2595       0.932       0.884       0.951       0.733
+                 all        1097        2595       0.952         0.9       0.958        0.75
+                 all        1097        2595       0.952       0.867       0.953       0.751
+                 all        1097        2595       0.933       0.894       0.955       0.747
+                 all        1097        2595       0.961       0.883       0.957       0.751
+                 all        1097        2595       0.934       0.897       0.958       0.756
+                 all        1097        2595       0.946       0.886       0.957       0.753
+                 all        1097        2595       0.927       0.914       0.959       0.766
+                 all        1097        2595       0.941         0.9        0.96       0.764
+                 all        1097        2595       0.946        0.91       0.962       0.761
+                 all        1097        2595       0.941       0.915       0.961        0.77
+                 all        1097        2595       0.935       0.914       0.961       0.771
+                 all        1097        2595       0.954       0.902       0.961       0.769
+                 all        1097        2595       0.949       0.901       0.961        0.77
+                 all        1097        2595       0.956       0.901        0.96       0.772
+adjustable monkey wrench        1097         139       0.883       0.856       0.956       0.731
+       monkey wrench        1097         195       0.984       0.933       0.984       0.797
+           allen key        1097         108       0.957       0.826       0.978        0.73
+ double-flats wrench        1097         114       0.947       0.675        0.84       0.643
+                hand        1097        1609       0.952       0.935       0.967       0.715
+pedal lockring wrench        1097         105       0.989       0.865       0.935       0.736
+       crank remover        1097          66       0.988           1       0.995       0.877
+             spindle        1097          62       0.967        0.96        0.98       0.776
+doubleFlatsBottomBracket        1097          58       0.936       0.914        0.98       0.827
+                bolt        1097          60       0.965        0.85       0.915       0.728
+               pedal        1097          48       0.963           1       0.995       0.873
+            crankArm        1097          31       0.939       0.993       0.991       0.827
+Optimizer stripped from runs/train/VAR_B40E40_Transfer_Freeze_No-Change/weights/last.pt, 12.3MB
+Optimizer stripped from runs/train/VAR_B40E40_Transfer_Freeze_No-Change/weights/best.pt, 12.3MB

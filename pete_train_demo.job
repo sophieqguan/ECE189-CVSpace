@@ -1,0 +1,25 @@
+#!/bin/bash
+#SBATCH --job-name=pete_train_demo       # Job name
+#SBATCH --output=pete_train_demo.out
+#SBATCH --error=pete_train_demo.err
+#SBATCH --time=200:00:00            # Walltime (hh:mm:ss)
+
+#SBATCH -N 1 --ntasks-per-node=6 --partition=gpu
+#SBATCH --gres=gpu:1
+
+#SBATCH --mail-user=sophieguan@ucsb.edu
+#SBATCH --mail-type ALL
+
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+export WANDB__SERVICE_WAIT=300
+
+source ~/anaconda3/bin/activate
+conda activate ece189_gpu
+
+cd $PBS_O_WORKDIR
+cd ./proj-pete
+
+run_name="Demo_Only_B128E100"
+
+# Run the Python script [python ./training_32.py]
+python ./yolov7/train.py --batch 40 --epochs 100 --data ./data-storage/full_dataset/679544/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp ./yolov7/data/hyp.scratch.tiny.yaml --name "$run_name-tiny"

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=pete_train       # Job name
-#SBATCH --output=pete_train.out
-#SBATCH --error=pete_train.err
+#SBATCH --output=pete_train_VAR_B40E100_Transfer_Fine-Tune_0-0001.out
+#SBATCH --error=pete_train_VAR_B40E100_Transfer_Fine-Tune_0-0001.err
 #SBATCH --time=200:00:00            # Walltime (hh:mm:ss)
 
 #SBATCH -N 1 --ntasks-per-node=6 --partition=gpu
@@ -19,8 +19,8 @@ conda activate ece189_gpu
 cd $PBS_O_WORKDIR
 cd ./proj-pete
 
-run_name="AFT_CMU_8"
+run_name="VAR_B40E100_Transfer_Fine-Tune_0-0001"
 
 # Run the Python script [python ./training_32.py]
-python ./yolov7/train.py --batch 40 --epochs 100 --data ./data-storage/full_dataset/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp ./yolov7/data/hyp.scratch.tiny.yaml --name $run_name
-python ./yolov7/test.py --data ./data-storage/full_dataset/obj_train_data/data_test.yaml --img 640 --batch 40 --conf 0.40 --iou 0.70 --device 0 --weights "./runs/train/$run_name/weights/best.pt" --name $run_name > "./test_results/$run_name.txt"
+python ./yolov7/train.py --batch 40 --epochs 40 --data ./data-storage/data/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp "./yolov7/data/hyp.scratch.tiny.transfer.yaml" --name $run_name
+python ./yolov7/test.py --data ./data-storage/data/obj_train_data/data_test.yaml --img 640 --batch 40 --conf 0.40 --iou 0.70 --device 0 --weights "./runs/train/$run_name/weights/best.pt" --name $run_name > "./test_results/$run_name.txt"

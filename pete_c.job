@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --ntasks=80
-#SBATCH --job-name=pete_c
-#SBATCH --output=pete_c.out
-#SBATCH --error=pete_c.err
+#SBATCH --job-name=pete_Variation_Sampled_Normal_Train
+#SBATCH --output=pete_Variation_Sampled_Normal_Train.out
+#SBATCH --error=pete_Variation_Sampled_Normal_Train.err
 
 #SBATCH --time=336:00:00
 
@@ -18,5 +18,7 @@ conda activate ece189_gpu
 cd $PBS_O_WORKDIR
 cd ./proj-pete
 
-# Run the Python script
-python ./training_128.py
+run_name="Variation_Sampled_Normal_Train"
+
+# Run the Python script [python ./training_32.py]
+python ./yolov7/train.py --batch 128 --epochs 80 --data ./data-storage/data/obj_train_data/data.yaml --weights ./yolov7/yolov7-tiny.pt --hyp ./yolov7/data/hyp.scratch.tiny.yaml --name "$run_name"

@@ -1,0 +1,16 @@
+Namespace(weights=['./runs/train/AFT_CutMixUpdated_7/weights/best.pt'], data='./data-storage/full_dataset/obj_train_data/data_test.yaml', batch_size=40, img_size=640, conf_thres=0.4, iou_thres=0.7, task='val', device='0', single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project='runs/test', name='AFT_CutMixUpdated_7', exist_ok=False, no_trace=False, v5_metric=False)
+Fusing layers... 
+ Convert model to Traced-model... 
+ traced_script_module saved! 
+ model is traced! 
+
+                 all        4157        7743       0.993       0.976        0.98       0.898
+adjustable monkey wrench        4157        1211       0.997       0.992       0.996       0.925
+       monkey wrench        4157        1696       0.997       0.994       0.997        0.94
+           allen key        4157         947       0.997       0.963       0.968       0.899
+ double-flats wrench        4157         944       0.973        0.97       0.974       0.899
+                hand        4157        1521       0.992       0.959       0.965       0.753
+pedal lockring wrench        4157         853       0.996       0.954       0.959       0.915
+       crank remover        4157         571           1           1           1       0.957
+Speed: 1.0/0.7/1.7 ms inference/NMS/total per 640x640 image at batch-size 40
+Results saved to runs/test/AFT_CutMixUpdated_7

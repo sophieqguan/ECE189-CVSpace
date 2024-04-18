@@ -1,22 +1,27 @@
-### IN PROGRESS:
-- update cutout + cutmix (done)
-    - failed preliminary: cutmix happens, but bounding box seems wrong
-    - try testing on local computer and just the cutmix function
-
-
-### TODO:
-- look at paper https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10122545
+### Open Areas:
+- paper https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10122545
 - combine bike videos: 
     616459
     677203
     618275
 - coco trained vs base class trained 
 
-### OLD (DONE):
-- data label for FSL is wrong (corrected)
-
 
 ## Notes:
+> ### April 17, 2024
+
+- Finished training on demo video. Had some delay bc of queue was too long
+- Aaron mentioned the B128E100 worked better than other models. It is very likely just bc its a larger model, but might also because of the batch size? Will try training on B128 and see how it goes.
+
+- I think it is very unfeasible to expect our model to generalize to any random setting. I think we really need to define a controlled environment. For example, even at space stations, the environment is controlled (and repetitive across iterations). We could build a setup just for bike fixing, a sort of "space station controlled room" idea lmfao that consists of just some sort of cardboard box surrounding in a white background. Will think on that later.
+
+- I want to merge tools, retrain with a series of different epochs and compare:
+    - transfer learning with the sampled data as target with pretrained as base (freeze base, use OG learning rate no change)
+        - in training
+    - fine-tuning/FSL with the sampled data as target with pretrained as base (no freeze, smaller learning rate)
+        - in training 
+    - fine-tuning/FSL with the roboflow as target with sampled as base (no freeze, smaller learning rate)
+
 > ### April 15, 2024
 
 - Finished labeling bottom bracket. I'm gonna walk in front of a bus.
