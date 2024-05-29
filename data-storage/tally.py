@@ -1,9 +1,8 @@
 import os
 
-def tally_class_counts():
+def tally_class_counts(nc):
     # iterates through dataset to tally class count
     dataset_path = "./data/obj_train_data"
-    nc = 7
     tally = [0 for _ in range(nc)]
     tc = 0
     
@@ -22,8 +21,6 @@ def tally_class_counts():
                 for line in lines:
                     if line.strip():  # check if line is not empty
                         tally[int(line[0])] += 1            # class is 0-indexed
-                        if int(line[0]) == 7: 
-                            print(file_path)
                     
     return tally, tc
 
@@ -35,8 +32,22 @@ if __name__ == "__main__":
     """
 
     # later on might want to do argparse since convert-data.job runs utility.py for tallying after updating dataset
-    cn = ["adjustable monkey wrench", "monkey wrench",  "allen key",  "double-flats wrench", "hand", "pedal lockring wrench", "crank remover"]
-    tally, tc = tally_class_counts()
+    cn = ["adjustable monkey wrench", 
+    "monkey wrench",  
+    "allen key", 
+    "double-flats wrench", 
+    "hand", 
+    "pedal lockring wrench", 
+    "crank remover",
+    "spindle",
+    "doubleFlatsBottomBracket",
+    "crankArmNonChainSide",
+    "bolt",
+    "pedal",
+    "crankArm",
+    "socket wrench"]
+
+    tally, tc = tally_class_counts(len(cn))
     sum = 0
     for c in tally:
         sum += c

@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/sophieguan/proj-pete/data-storage/tally.py", line 39, in <module>
-    tally, tc = tally_class_counts()
-                ^^^^^^^^^^^^^^^^^^^^
-  File "/home/sophieguan/proj-pete/data-storage/tally.py", line 24, in tally_class_counts
-    tally[int(line[0])] += 1            # class is 0-indexed
-    ~~~~~^^^^^^^^^^^^^^
-IndexError: list index out of range

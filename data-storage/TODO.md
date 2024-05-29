@@ -8,6 +8,11 @@
 
 
 ## Notes:
+> ### May 13, 2024
+
+- TODO: 
+    - make new dataset containing only the demo videos
+
 > ### April 17, 2024
 
 - Finished training on demo video. Had some delay bc of queue was too long

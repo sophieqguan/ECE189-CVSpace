@@ -9,6 +9,7 @@ import argparse
 
 def video_to_frames(input_video, frame_reduct=9):
     # Open the video file
+    print(input_video)
     video_capture = cv2.VideoCapture(input_video)
     fps = int(video_capture.get(cv2.CAP_PROP_FPS))
     total_frames = int(video_capture.get(cv2.CAP_PROP_FRAME_COUNT))

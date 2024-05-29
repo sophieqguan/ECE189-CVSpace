@@ -14,4 +14,9 @@
 618275 bike-video/Pedal.mp4
 677203 bike-video/Spindle.mp4
 677248 bike-video/DoubleFlatBottomBracket.mp4
+711508 tool-video/SocketWrench.mp4
+684029 bike-video/CrankArm.mp4
 679544 bike-video/bottomBracketInstall.MOV
+784358 bike-video/OutOfOrder2.mov
+784359 bike-video/OutOfOrder1.mov
+749841 bike-video/bottomBracketInstallBad1-30.mov

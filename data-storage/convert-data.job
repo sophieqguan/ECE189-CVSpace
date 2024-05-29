@@ -2,7 +2,7 @@
 #SBATCH --job-name=convert-data       # Job name
 #SBATCH --output=convert-data.out
 #SBATCH --error=convert-data.err
-#SBATCH --time=01:59:00            # Walltime (hh:mm:ss)
+#SBATCH --time=10:00:00            # Walltime (hh:mm:ss)
 
 #SBATCH --nodes=1 --ntasks-per-node 3
 #SBATCH --mail-user=sophieguan@ucsb.edu
@@ -19,11 +19,12 @@ cd proj-pete/data-storage
 # Usage 1: python3 convert.py <input_video_path> <annotation_folder_path> <output_folder_path> [-z]")
 # Usage 2: python3 fetchFromCVAT.py [job_id]
 
-jobs=("632859" "632875" "632949" "632955" "632968" "632959" "632960" "632964" "632963" "632877" "632961" "632962" "616459" "618275" "677203" "677248" "679544") 
+# done_jobs=("632859" "632875" "632949" "632955" "632968" "632959" "632960" "632964" "632963" "632877" "632961" "632962" "616459" "618275" "677203" "677248" "679544" "711508" "684029" "784358") 
+jobs=("784359" "749841" "679544" "784358")
 
-output="data"
 input="data"
-fr=9
+output="demo_dataset"
+fr=7
 
 for job in "${jobs[@]}"
 do
@@ -35,6 +36,6 @@ rm -rf "./$output/obj_train_data/test"
 rm -rf "./$output/obj_train_data/train"
 rm -rf "./$output/obj_train_data/valid"
 
-python mergeData.py --i "./$input" --o "./$output"
-# python tally.py 
+python mergeData.py --i "./$output" --o "./$output"
+python tally.py 
 

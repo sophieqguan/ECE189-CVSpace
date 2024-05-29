@@ -1,0 +1,220 @@
+freezing model.0.conv.weight
+freezing model.0.bn.weight
+freezing model.0.bn.bias
+freezing model.1.conv.weight
+freezing model.1.bn.weight
+freezing model.1.bn.bias
+freezing model.2.conv.weight
+freezing model.2.bn.weight
+freezing model.2.bn.bias
+freezing model.3.conv.weight
+freezing model.3.bn.weight
+freezing model.3.bn.bias
+freezing model.4.conv.weight
+freezing model.4.bn.weight
+freezing model.4.bn.bias
+freezing model.5.conv.weight
+freezing model.5.bn.weight
+freezing model.5.bn.bias
+freezing model.7.conv.weight
+freezing model.7.bn.weight
+freezing model.7.bn.bias
+freezing model.9.conv.weight
+freezing model.9.bn.weight
+freezing model.9.bn.bias
+freezing model.10.conv.weight
+freezing model.10.bn.weight
+freezing model.10.bn.bias
+freezing model.11.conv.weight
+freezing model.11.bn.weight
+freezing model.11.bn.bias
+freezing model.12.conv.weight
+freezing model.12.bn.weight
+freezing model.12.bn.bias
+freezing model.14.conv.weight
+freezing model.14.bn.weight
+freezing model.14.bn.bias
+freezing model.16.conv.weight
+freezing model.16.bn.weight
+freezing model.16.bn.bias
+freezing model.17.conv.weight
+freezing model.17.bn.weight
+freezing model.17.bn.bias
+freezing model.18.conv.weight
+freezing model.18.bn.weight
+freezing model.18.bn.bias
+freezing model.19.conv.weight
+freezing model.19.bn.weight
+freezing model.19.bn.bias
+freezing model.21.conv.weight
+freezing model.21.bn.weight
+freezing model.21.bn.bias
+freezing model.23.conv.weight
+freezing model.23.bn.weight
+freezing model.23.bn.bias
+freezing model.24.conv.weight
+freezing model.24.bn.weight
+freezing model.24.bn.bias
+freezing model.25.conv.weight
+freezing model.25.bn.weight
+freezing model.25.bn.bias
+freezing model.26.conv.weight
+freezing model.26.bn.weight
+freezing model.26.bn.bias
+freezing model.28.conv.weight
+freezing model.28.bn.weight
+freezing model.28.bn.bias
+freezing model.29.conv.weight
+freezing model.29.bn.weight
+freezing model.29.bn.bias
+freezing model.30.conv.weight
+freezing model.30.bn.weight
+freezing model.30.bn.bias
+freezing model.35.conv.weight
+freezing model.35.bn.weight
+freezing model.35.bn.bias
+freezing model.37.conv.weight
+freezing model.37.bn.weight
+freezing model.37.bn.bias
+freezing model.38.conv.weight
+freezing model.38.bn.weight
+freezing model.38.bn.bias
+freezing model.40.conv.weight
+freezing model.40.bn.weight
+freezing model.40.bn.bias
+freezing model.42.conv.weight
+freezing model.42.bn.weight
+freezing model.42.bn.bias
+freezing model.43.conv.weight
+freezing model.43.bn.weight
+freezing model.43.bn.bias
+freezing model.44.conv.weight
+freezing model.44.bn.weight
+freezing model.44.bn.bias
+freezing model.45.conv.weight
+freezing model.45.bn.weight
+freezing model.45.bn.bias
+freezing model.47.conv.weight
+freezing model.47.bn.weight
+freezing model.47.bn.bias
+freezing model.48.conv.weight
+freezing model.48.bn.weight
+freezing model.48.bn.bias
+freezing model.50.conv.weight
+freezing model.50.bn.weight
+freezing model.50.bn.bias
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 5.31, Best Possible Recall (BPR) = 0.9984
+                 all         622        1996       0.852      0.0418      0.0332     0.00948
+                 all         622        1996       0.576       0.189      0.0977      0.0249
+                 all         622        1996       0.717        0.22       0.223      0.0673
+                 all         622        1996       0.802        0.29       0.322       0.141
+                 all         622        1996       0.743       0.301       0.332       0.144
+                 all         622        1996       0.719       0.417       0.376        0.14
+                 all         622        1996       0.777       0.389       0.349       0.128
+                 all         622        1996       0.777       0.459       0.454       0.207
+                 all         622        1996       0.746       0.427       0.442       0.214
+                 all         622        1996       0.848       0.484       0.516       0.269
+                 all         622        1996       0.837       0.515       0.543       0.266
+                 all         622        1996       0.868       0.511       0.597       0.319
+                 all         622        1996       0.881       0.492       0.593       0.301
+                 all         622        1996       0.868       0.492       0.594       0.306
+                 all         622        1996       0.834       0.551       0.617       0.318
+                 all         622        1996       0.831       0.511       0.579       0.315
+                 all         622        1996       0.681       0.596       0.612       0.316
+                 all         622        1996       0.598       0.621       0.624       0.349
+                 all         622        1996       0.693       0.634        0.63       0.335
+                 all         622        1996       0.635       0.641        0.63        0.35
+                 all         622        1996       0.756       0.609       0.637       0.338
+                 all         622        1996       0.697       0.573       0.624       0.349
+                 all         622        1996       0.793         0.6       0.694       0.373
+                 all         622        1996       0.714       0.617       0.694       0.392
+                 all         622        1996       0.708       0.642       0.663       0.376
+                 all         622        1996       0.814       0.595       0.659       0.386
+                 all         622        1996       0.729       0.643        0.69       0.391
+                 all         622        1996       0.805       0.628       0.698       0.392
+                 all         622        1996        0.86       0.609       0.674       0.373
+                 all         622        1996       0.721        0.63       0.683       0.399
+                 all         622        1996       0.751       0.669        0.71       0.412
+                 all         622        1996        0.79        0.64       0.707       0.399
+                 all         622        1996        0.71       0.686       0.696       0.402
+                 all         622        1996       0.557       0.746       0.689       0.408
+                 all         622        1996       0.746       0.677       0.721       0.418
+                 all         622        1996       0.801       0.666       0.717       0.427
+                 all         622        1996       0.635       0.732       0.713       0.421
+                 all         622        1996       0.631       0.749       0.721       0.421
+                 all         622        1996       0.584       0.793       0.723       0.415
+                 all         622        1996       0.606       0.773       0.748       0.447
+                 all         622        1996       0.651       0.748       0.734       0.432
+                 all         622        1996       0.709        0.72       0.744       0.439
+                 all         622        1996       0.645       0.697       0.715       0.425
+                 all         622        1996       0.744       0.687       0.723       0.423
+                 all         622        1996       0.758       0.732       0.764       0.473
+                 all         622        1996       0.691       0.692       0.733        0.45
+                 all         622        1996        0.66       0.755       0.742       0.458
+                 all         622        1996       0.805       0.723       0.758        0.47
+                 all         622        1996       0.754       0.721        0.76       0.448
+                 all         622        1996       0.723       0.738       0.747       0.444
+                 all         622        1996       0.754       0.746       0.754       0.453
+                 all         622        1996       0.752       0.702       0.775       0.477
+                 all         622        1996       0.819       0.687       0.791       0.497
+                 all         622        1996         0.7       0.699       0.737       0.463
+                 all         622        1996       0.788       0.689       0.796       0.485
+                 all         622        1996       0.703       0.776       0.797       0.485
+                 all         622        1996       0.647       0.811       0.784       0.495
+                 all         622        1996        0.75       0.707       0.792       0.488
+                 all         622        1996       0.791       0.683        0.79       0.503
+                 all         622        1996       0.874        0.69       0.804        0.49
+                 all         622        1996       0.776       0.695       0.794       0.499
+                 all         622        1996       0.673       0.822       0.816       0.517
+                 all         622        1996       0.708       0.818       0.808       0.513
+                 all         622        1996       0.777       0.698       0.801       0.505
+                 all         622        1996       0.656       0.849       0.792       0.499
+                 all         622        1996       0.718       0.781       0.789       0.504
+                 all         622        1996        0.71        0.85        0.82       0.513
+                 all         622        1996       0.678       0.858       0.817       0.518
+                 all         622        1996       0.916        0.67        0.81       0.513
+                 all         622        1996       0.766       0.799       0.823       0.527
+                 all         622        1996       0.746       0.827       0.832       0.511
+                 all         622        1996       0.741       0.814       0.828       0.541
+                 all         622        1996        0.73       0.789       0.826       0.536
+                 all         622        1996        0.69       0.849        0.83       0.543
+                 all         622        1996       0.755       0.821       0.832       0.544
+                 all         622        1996       0.716       0.858       0.838       0.546
+                 all         622        1996       0.749       0.857       0.841        0.55
+                 all         622        1996       0.719       0.785       0.823       0.527
+                 all         622        1996       0.677       0.859        0.82       0.534
+                 all         622        1996        0.71       0.816       0.822       0.526
+                 all         622        1996        0.68       0.877       0.834       0.531
+                 all         622        1996       0.664       0.886       0.835        0.53
+                 all         622        1996       0.746       0.799       0.845        0.54
+                 all         622        1996       0.647       0.872       0.823       0.531
+                 all         622        1996        0.69       0.866       0.848       0.532
+                 all         622        1996       0.673       0.864       0.827       0.542
+                 all         622        1996       0.746       0.848       0.845       0.549
+                 all         622        1996       0.692       0.853       0.836       0.535
+                 all         622        1996       0.791        0.84       0.853       0.548
+                 all         622        1996        0.77       0.845       0.855       0.549
+                 all         622        1996       0.779       0.837       0.848        0.55
+                 all         622        1996       0.767        0.86       0.851       0.549
+                 all         622        1996       0.779       0.853       0.856       0.552
+                 all         622        1996       0.709       0.863       0.833       0.531
+                 all         622        1996       0.713       0.867       0.838       0.549
+                 all         622        1996        0.72       0.866        0.84       0.545
+                 all         622        1996       0.722       0.864       0.838       0.546
+                 all         622        1996       0.711       0.867        0.84       0.552
+                 all         622        1996       0.703       0.856        0.84       0.542
+                 all         622        1996        0.75       0.797       0.842       0.551
+adjustable monkey wrench         622           9       0.664       0.556       0.771       0.472
+       monkey wrench         622           5       0.749         0.6       0.526       0.234
+ double-flats wrench         622          10       0.812           1       0.995       0.723
+                hand         622        1692       0.934       0.964       0.978       0.733
+pedal lockring wrench         622          14       0.467       0.643       0.541       0.213
+             spindle         622          42       0.828       0.689       0.814       0.396
+doubleFlatsBottomBracket         622          60       0.754       0.983       0.951        0.68
+                bolt         622          58       0.762       0.828       0.875       0.517
+               pedal         622          44        0.85           1       0.988       0.702
+            crankArm         622          60        0.88           1       0.995       0.805
+       socket wrench         622           2       0.547         0.5       0.828        0.58
+Optimizer stripped from runs/train/Demo_Use_Transfer_B40E100/weights/last.pt, 12.3MB
+Optimizer stripped from runs/train/Demo_Use_Transfer_B40E100/weights/best.pt, 12.3MB

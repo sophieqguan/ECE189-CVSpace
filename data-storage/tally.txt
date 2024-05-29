@@ -1,9 +1,16 @@
-Total instances: 8897
+Total instances: 11558
 
 adjustable monkey wrench: 1350 instances
-monkey wrench: 1891 instances
+monkey wrench: 4028 instances
 allen key: 1055 instances
-double-flats wrench: 1052 instances
-hand: 15062 instances
-pedal lockring wrench: 953 instances
+double-flats wrench: 1157 instances
+hand: 16132 instances
+pedal lockring wrench: 1048 instances
 crank remover: 635 instances
+spindle: 586 instances
+doubleFlatsBottomBracket: 626 instances
+crankArmNonChainSide: 0 instances
+bolt: 0 instances
+pedal: 0 instances
+crankArm: 0 instances
+socket wrench: 0 instances

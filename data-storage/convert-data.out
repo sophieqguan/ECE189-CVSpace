@@ -1,188 +1,13 @@
-Video FPS: 60
-Total Frames: 3741
-Processed 0/3741 framesProcessed 100/3741 framesProcessed 200/3741 framesProcessed 300/3741 framesProcessed 400/3741 framesProcessed 500/3741 framesProcessed 600/3741 framesProcessed 700/3741 framesProcessed 800/3741 framesProcessed 900/3741 framesProcessed 1000/3741 framesProcessed 1100/3741 framesProcessed 1200/3741 framesProcessed 1300/3741 framesProcessed 1400/3741 framesProcessed 1500/3741 framesProcessed 1600/3741 framesProcessed 1700/3741 framesProcessed 1800/3741 framesProcessed 1900/3741 framesProcessed 2000/3741 framesProcessed 2100/3741 framesProcessed 2200/3741 framesProcessed 2300/3741 framesProcessed 2400/3741 framesProcessed 2500/3741 framesProcessed 2600/3741 framesProcessed 2700/3741 framesProcessed 2800/3741 framesProcessed 2900/3741 framesProcessed 3000/3741 framesProcessed 3100/3741 framesProcessed 3200/3741 framesProcessed 3300/3741 framesProcessed 3400/3741 framesProcessed 3500/3741 framesProcessed 3600/3741 framesProcessed 3700/3741 frames
+bike-video/OutOfOrder2.mov
+Video FPS: 30
+Total Frames: 716
+Processed 0/716 framesProcessed 100/716 framesProcessed 200/716 framesProcessed 300/716 framesProcessed 400/716 framesProcessed 500/716 framesProcessed 600/716 framesProcessed 700/716 frames
 Frames extraction complete.
-Reduced Total Frames: 416
-Training: 332
-Testing: 41
+Reduced Total Frames: 80
+Training: 64
+Testing: 8
 Shuffled
-Processed 0/416 framesProcessed 100/416 framesProcessed 200/416 framesProcessed 300/416 framesProcessed 400/416 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 60
-Total Frames: 3772
-Processed 0/3772 framesProcessed 100/3772 framesProcessed 200/3772 framesProcessed 300/3772 framesProcessed 400/3772 framesProcessed 500/3772 framesProcessed 600/3772 framesProcessed 700/3772 framesProcessed 800/3772 framesProcessed 900/3772 framesProcessed 1000/3772 framesProcessed 1100/3772 framesProcessed 1200/3772 framesProcessed 1300/3772 framesProcessed 1400/3772 framesProcessed 1500/3772 framesProcessed 1600/3772 framesProcessed 1700/3772 framesProcessed 1800/3772 framesProcessed 1900/3772 framesProcessed 2000/3772 framesProcessed 2100/3772 framesProcessed 2200/3772 framesProcessed 2300/3772 framesProcessed 2400/3772 framesProcessed 2500/3772 framesProcessed 2600/3772 framesProcessed 2700/3772 framesProcessed 2800/3772 framesProcessed 2900/3772 framesProcessed 3000/3772 framesProcessed 3100/3772 framesProcessed 3200/3772 framesProcessed 3300/3772 framesProcessed 3400/3772 framesProcessed 3500/3772 framesProcessed 3600/3772 framesProcessed 3700/3772 frames
-Frames extraction complete.
-Reduced Total Frames: 420
-Training: 336
-Testing: 42
-Shuffled
-Processed 0/420 framesProcessed 100/420 framesProcessed 200/420 framesProcessed 300/420 framesProcessed 400/420 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2669
-Processed 0/2669 framesProcessed 100/2669 framesProcessed 200/2669 framesProcessed 300/2669 framesProcessed 400/2669 framesProcessed 500/2669 framesProcessed 600/2669 framesProcessed 700/2669 framesProcessed 800/2669 framesProcessed 900/2669 framesProcessed 1000/2669 framesProcessed 1100/2669 framesProcessed 1200/2669 framesProcessed 1300/2669 framesProcessed 1400/2669 framesProcessed 1500/2669 framesProcessed 1600/2669 framesProcessed 1700/2669 framesProcessed 1800/2669 framesProcessed 1900/2669 framesProcessed 2000/2669 framesProcessed 2100/2669 framesProcessed 2200/2669 framesProcessed 2300/2669 framesProcessed 2400/2669 framesProcessed 2500/2669 framesProcessed 2600/2669 frames
-Frames extraction complete.
-Reduced Total Frames: 297
-Training: 237
-Testing: 29
-Shuffled
-Processed 0/297 framesProcessed 100/297 framesProcessed 200/297 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 60
-Total Frames: 3761
-Processed 0/3761 framesProcessed 100/3761 framesProcessed 200/3761 framesProcessed 300/3761 framesProcessed 400/3761 framesProcessed 500/3761 framesProcessed 600/3761 framesProcessed 700/3761 framesProcessed 800/3761 framesProcessed 900/3761 framesProcessed 1000/3761 framesProcessed 1100/3761 framesProcessed 1200/3761 framesProcessed 1300/3761 framesProcessed 1400/3761 framesProcessed 1500/3761 framesProcessed 1600/3761 framesProcessed 1700/3761 framesProcessed 1800/3761 framesProcessed 1900/3761 framesProcessed 2000/3761 framesProcessed 2100/3761 framesProcessed 2200/3761 framesProcessed 2300/3761 framesProcessed 2400/3761 framesProcessed 2500/3761 framesProcessed 2600/3761 framesProcessed 2700/3761 framesProcessed 2800/3761 framesProcessed 2900/3761 framesProcessed 3000/3761 framesProcessed 3100/3761 framesProcessed 3200/3761 framesProcessed 3300/3761 framesProcessed 3400/3761 framesProcessed 3500/3761 framesProcessed 3600/3761 framesProcessed 3700/3761 frames
-Frames extraction complete.
-Reduced Total Frames: 418
-Training: 334
-Testing: 41
-Shuffled
-Processed 0/418 framesProcessed 100/418 framesProcessed 200/418 framesProcessed 300/418 framesProcessed 400/418 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2874
-Processed 0/2874 framesProcessed 100/2874 framesProcessed 200/2874 framesProcessed 300/2874 framesProcessed 400/2874 framesProcessed 500/2874 framesProcessed 600/2874 framesProcessed 700/2874 framesProcessed 800/2874 framesProcessed 900/2874 framesProcessed 1000/2874 framesProcessed 1100/2874 framesProcessed 1200/2874 framesProcessed 1300/2874 framesProcessed 1400/2874 framesProcessed 1500/2874 framesProcessed 1600/2874 framesProcessed 1700/2874 framesProcessed 1800/2874 framesProcessed 1900/2874 framesProcessed 2000/2874 framesProcessed 2100/2874 framesProcessed 2200/2874 framesProcessed 2300/2874 framesProcessed 2400/2874 framesProcessed 2500/2874 framesProcessed 2600/2874 framesProcessed 2700/2874 framesProcessed 2800/2874 frames
-Frames extraction complete.
-Reduced Total Frames: 320
-Training: 256
-Testing: 32
-Shuffled
-Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2875
-Processed 0/2875 framesProcessed 100/2875 framesProcessed 200/2875 framesProcessed 300/2875 framesProcessed 400/2875 framesProcessed 500/2875 framesProcessed 600/2875 framesProcessed 700/2875 framesProcessed 800/2875 framesProcessed 900/2875 framesProcessed 1000/2875 framesProcessed 1100/2875 framesProcessed 1200/2875 framesProcessed 1300/2875 framesProcessed 1400/2875 framesProcessed 1500/2875 framesProcessed 1600/2875 framesProcessed 1700/2875 framesProcessed 1800/2875 framesProcessed 1900/2875 framesProcessed 2000/2875 framesProcessed 2100/2875 framesProcessed 2200/2875 framesProcessed 2300/2875 framesProcessed 2400/2875 framesProcessed 2500/2875 framesProcessed 2600/2875 framesProcessed 2700/2875 framesProcessed 2800/2875 frames
-Frames extraction complete.
-Reduced Total Frames: 320
-Training: 256
-Testing: 32
-Shuffled
-Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2863
-Processed 0/2863 framesProcessed 100/2863 framesProcessed 200/2863 framesProcessed 300/2863 framesProcessed 400/2863 framesProcessed 500/2863 framesProcessed 600/2863 framesProcessed 700/2863 framesProcessed 800/2863 framesProcessed 900/2863 framesProcessed 1000/2863 framesProcessed 1100/2863 framesProcessed 1200/2863 framesProcessed 1300/2863 framesProcessed 1400/2863 framesProcessed 1500/2863 framesProcessed 1600/2863 framesProcessed 1700/2863 framesProcessed 1800/2863 framesProcessed 1900/2863 framesProcessed 2000/2863 framesProcessed 2100/2863 framesProcessed 2200/2863 framesProcessed 2300/2863 framesProcessed 2400/2863 framesProcessed 2500/2863 framesProcessed 2600/2863 framesProcessed 2700/2863 framesProcessed 2800/2863 frames
-Frames extraction complete.
-Reduced Total Frames: 319
-Training: 255
-Testing: 31
-Shuffled
-Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2842
-Processed 0/2842 framesProcessed 100/2842 framesProcessed 200/2842 framesProcessed 300/2842 framesProcessed 400/2842 framesProcessed 500/2842 framesProcessed 600/2842 framesProcessed 700/2842 framesProcessed 800/2842 framesProcessed 900/2842 framesProcessed 1000/2842 framesProcessed 1100/2842 framesProcessed 1200/2842 framesProcessed 1300/2842 framesProcessed 1400/2842 framesProcessed 1500/2842 framesProcessed 1600/2842 framesProcessed 1700/2842 framesProcessed 1800/2842 framesProcessed 1900/2842 framesProcessed 2000/2842 framesProcessed 2100/2842 framesProcessed 2200/2842 framesProcessed 2300/2842 framesProcessed 2400/2842 framesProcessed 2500/2842 framesProcessed 2600/2842 framesProcessed 2700/2842 framesProcessed 2800/2842 frames
-Frames extraction complete.
-Reduced Total Frames: 316
-Training: 252
-Testing: 31
-Shuffled
-Processed 0/316 framesProcessed 100/316 framesProcessed 200/316 framesProcessed 300/316 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2841
-Processed 0/2841 framesProcessed 100/2841 framesProcessed 200/2841 framesProcessed 300/2841 framesProcessed 400/2841 framesProcessed 500/2841 framesProcessed 600/2841 framesProcessed 700/2841 framesProcessed 800/2841 framesProcessed 900/2841 framesProcessed 1000/2841 framesProcessed 1100/2841 framesProcessed 1200/2841 framesProcessed 1300/2841 framesProcessed 1400/2841 framesProcessed 1500/2841 framesProcessed 1600/2841 framesProcessed 1700/2841 framesProcessed 1800/2841 framesProcessed 1900/2841 framesProcessed 2000/2841 framesProcessed 2100/2841 framesProcessed 2200/2841 framesProcessed 2300/2841 framesProcessed 2400/2841 framesProcessed 2500/2841 framesProcessed 2600/2841 framesProcessed 2700/2841 framesProcessed 2800/2841 frames
-Frames extraction complete.
-Reduced Total Frames: 316
-Training: 252
-Testing: 31
-Shuffled
-Processed 0/316 framesProcessed 100/316 framesProcessed 200/316 framesProcessed 300/316 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2867
-Processed 0/2867 framesProcessed 100/2867 framesProcessed 200/2867 framesProcessed 300/2867 framesProcessed 400/2867 framesProcessed 500/2867 framesProcessed 600/2867 framesProcessed 700/2867 framesProcessed 800/2867 framesProcessed 900/2867 framesProcessed 1000/2867 framesProcessed 1100/2867 framesProcessed 1200/2867 framesProcessed 1300/2867 framesProcessed 1400/2867 framesProcessed 1500/2867 framesProcessed 1600/2867 framesProcessed 1700/2867 framesProcessed 1800/2867 framesProcessed 1900/2867 framesProcessed 2000/2867 framesProcessed 2100/2867 framesProcessed 2200/2867 framesProcessed 2300/2867 framesProcessed 2400/2867 framesProcessed 2500/2867 framesProcessed 2600/2867 framesProcessed 2700/2867 framesProcessed 2800/2867 frames
-Frames extraction complete.
-Reduced Total Frames: 319
-Training: 255
-Testing: 31
-Shuffled
-Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2845
-Processed 0/2845 framesProcessed 100/2845 framesProcessed 200/2845 framesProcessed 300/2845 framesProcessed 400/2845 framesProcessed 500/2845 framesProcessed 600/2845 framesProcessed 700/2845 framesProcessed 800/2845 framesProcessed 900/2845 framesProcessed 1000/2845 framesProcessed 1100/2845 framesProcessed 1200/2845 framesProcessed 1300/2845 framesProcessed 1400/2845 framesProcessed 1500/2845 framesProcessed 1600/2845 framesProcessed 1700/2845 framesProcessed 1800/2845 framesProcessed 1900/2845 framesProcessed 2000/2845 framesProcessed 2100/2845 framesProcessed 2200/2845 framesProcessed 2300/2845 framesProcessed 2400/2845 framesProcessed 2500/2845 framesProcessed 2600/2845 framesProcessed 2700/2845 framesProcessed 2800/2845 frames
-Frames extraction complete.
-Reduced Total Frames: 317
-Training: 253
-Testing: 31
-Shuffled
-Processed 0/317 framesProcessed 100/317 framesProcessed 200/317 framesProcessed 300/317 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2870
-Processed 0/2870 framesProcessed 100/2870 framesProcessed 200/2870 framesProcessed 300/2870 framesProcessed 400/2870 framesProcessed 500/2870 framesProcessed 600/2870 framesProcessed 700/2870 framesProcessed 800/2870 framesProcessed 900/2870 framesProcessed 1000/2870 framesProcessed 1100/2870 framesProcessed 1200/2870 framesProcessed 1300/2870 framesProcessed 1400/2870 framesProcessed 1500/2870 framesProcessed 1600/2870 framesProcessed 1700/2870 framesProcessed 1800/2870 framesProcessed 1900/2870 framesProcessed 2000/2870 framesProcessed 2100/2870 framesProcessed 2200/2870 framesProcessed 2300/2870 framesProcessed 2400/2870 framesProcessed 2500/2870 framesProcessed 2600/2870 framesProcessed 2700/2870 framesProcessed 2800/2870 frames
-Frames extraction complete.
-Reduced Total Frames: 319
-Training: 255
-Testing: 31
-Shuffled
-Processed 0/319 framesProcessed 100/319 framesProcessed 200/319 framesProcessed 300/319 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2903
-Processed 0/2903 framesProcessed 100/2903 framesProcessed 200/2903 framesProcessed 300/2903 framesProcessed 400/2903 framesProcessed 500/2903 framesProcessed 600/2903 framesProcessed 700/2903 framesProcessed 800/2903 framesProcessed 900/2903 framesProcessed 1000/2903 framesProcessed 1100/2903 framesProcessed 1200/2903 framesProcessed 1300/2903 framesProcessed 1400/2903 framesProcessed 1500/2903 framesProcessed 1600/2903 framesProcessed 1700/2903 framesProcessed 1800/2903 framesProcessed 1900/2903 framesProcessed 2000/2903 framesProcessed 2100/2903 framesProcessed 2200/2903 framesProcessed 2300/2903 framesProcessed 2400/2903 framesProcessed 2500/2903 framesProcessed 2600/2903 framesProcessed 2700/2903 framesProcessed 2800/2903 framesProcessed 2900/2903 frames
-Frames extraction complete.
-Reduced Total Frames: 323
-Training: 258
-Testing: 32
-Shuffled
-Processed 0/323 framesProcessed 100/323 framesProcessed 200/323 framesProcessed 300/323 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2898
-Processed 0/2898 framesProcessed 100/2898 framesProcessed 200/2898 framesProcessed 300/2898 framesProcessed 400/2898 framesProcessed 500/2898 framesProcessed 600/2898 framesProcessed 700/2898 framesProcessed 800/2898 framesProcessed 900/2898 framesProcessed 1000/2898 framesProcessed 1100/2898 framesProcessed 1200/2898 framesProcessed 1300/2898 framesProcessed 1400/2898 framesProcessed 1500/2898 framesProcessed 1600/2898 framesProcessed 1700/2898 framesProcessed 1800/2898 framesProcessed 1900/2898 framesProcessed 2000/2898 framesProcessed 2100/2898 framesProcessed 2200/2898 framesProcessed 2300/2898 framesProcessed 2400/2898 framesProcessed 2500/2898 framesProcessed 2600/2898 framesProcessed 2700/2898 framesProcessed 2800/2898 frames
-Frames extraction complete.
-Reduced Total Frames: 322
-Training: 257
-Testing: 32
-Shuffled
-Processed 0/322 framesProcessed 100/322 framesProcessed 200/322 framesProcessed 300/322 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2874
-Processed 0/2874 framesProcessed 100/2874 framesProcessed 200/2874 framesProcessed 300/2874 framesProcessed 400/2874 framesProcessed 500/2874 framesProcessed 600/2874 framesProcessed 700/2874 framesProcessed 800/2874 framesProcessed 900/2874 framesProcessed 1000/2874 framesProcessed 1100/2874 framesProcessed 1200/2874 framesProcessed 1300/2874 framesProcessed 1400/2874 framesProcessed 1500/2874 framesProcessed 1600/2874 framesProcessed 1700/2874 framesProcessed 1800/2874 framesProcessed 1900/2874 framesProcessed 2000/2874 framesProcessed 2100/2874 framesProcessed 2200/2874 framesProcessed 2300/2874 framesProcessed 2400/2874 framesProcessed 2500/2874 framesProcessed 2600/2874 framesProcessed 2700/2874 framesProcessed 2800/2874 frames
-Frames extraction complete.
-Reduced Total Frames: 320
-Training: 256
-Testing: 32
-Shuffled
-Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 25
-Total Frames: 2880
-Processed 0/2880 framesProcessed 100/2880 framesProcessed 200/2880 framesProcessed 300/2880 framesProcessed 400/2880 framesProcessed 500/2880 framesProcessed 600/2880 framesProcessed 700/2880 framesProcessed 800/2880 framesProcessed 900/2880 framesProcessed 1000/2880 framesProcessed 1100/2880 framesProcessed 1200/2880 framesProcessed 1300/2880 framesProcessed 1400/2880 framesProcessed 1500/2880 framesProcessed 1600/2880 framesProcessed 1700/2880 framesProcessed 1800/2880 framesProcessed 1900/2880 framesProcessed 2000/2880 framesProcessed 2100/2880 framesProcessed 2200/2880 framesProcessed 2300/2880 framesProcessed 2400/2880 framesProcessed 2500/2880 framesProcessed 2600/2880 framesProcessed 2700/2880 framesProcessed 2800/2880 frames
-Frames extraction complete.
-Reduced Total Frames: 320
-Training: 256
-Testing: 32
-Shuffled
-Processed 0/320 framesProcessed 100/320 framesProcessed 200/320 framesProcessed 300/320 frames
-Frames split complete.
-YAML file 'data.yaml' created successfully.
-Video FPS: 59
-Total Frames: 5935
-Processed 0/5935 framesProcessed 100/5935 framesProcessed 200/5935 framesProcessed 300/5935 framesProcessed 400/5935 framesProcessed 500/5935 framesProcessed 600/5935 framesProcessed 700/5935 framesProcessed 800/5935 framesProcessed 900/5935 framesProcessed 1000/5935 framesProcessed 1100/5935 framesProcessed 1200/5935 framesProcessed 1300/5935 framesProcessed 1400/5935 framesProcessed 1500/5935 framesProcessed 1600/5935 framesProcessed 1700/5935 framesProcessed 1800/5935 framesProcessed 1900/5935 framesProcessed 2000/5935 framesProcessed 2100/5935 framesProcessed 2200/5935 framesProcessed 2300/5935 framesProcessed 2400/5935 framesProcessed 2500/5935 framesProcessed 2600/5935 framesProcessed 2700/5935 framesProcessed 2800/5935 framesProcessed 2900/5935 framesProcessed 3000/5935 framesProcessed 3100/5935 framesProcessed 3200/5935 framesProcessed 3300/5935 framesProcessed 3400/5935 framesProcessed 3500/5935 framesProcessed 3600/5935 framesProcessed 3700/5935 framesProcessed 3800/5935 framesProcessed 3900/5935 framesProcessed 4000/5935 framesProcessed 4100/5935 framesProcessed 4200/5935 framesProcessed 4300/5935 framesProcessed 4400/5935 framesProcessed 4500/5935 framesProcessed 4600/5935 framesProcessed 4700/5935 framesProcessed 4800/5935 framesProcessed 4900/5935 framesProcessed 5000/5935 framesProcessed 5100/5935 framesProcessed 5200/5935 framesProcessed 5300/5935 framesProcessed 5400/5935 framesProcessed 5500/5935 framesProcessed 5600/5935 framesProcessed 5700/5935 framesProcessed 5800/5935 framesProcessed 5900/5935 frames
-Frames extraction complete.
-Reduced Total Frames: 660
-Training: 528
-Testing: 66
-Shuffled
-Processed 0/660 framesProcessed 100/660 framesProcessed 200/660 framesProcessed 300/660 framesProcessed 400/660 framesProcessed 500/660 framesProcessed 600/660 frames
+Processed 0/80 frames
 Frames split complete.
 YAML file 'data.yaml' created successfully.
 Fetching folder structure
@@ -312,4 +137,55 @@ Copying completed.
 Copying completed.
 Copying completed.
 Copying completed.
+Working on ./data/711508
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/684029
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Working on ./data/784358
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
+Copying completed.
 Entering ./data/obj_train_data/test/labels:
+Entering ./data/obj_train_data/train/labels:
+Entering ./data/obj_train_data/valid/labels:
+i: 0
+adjustable monkey wrench: 1350 instances (5.07%)
+i: 1
+monkey wrench: 4028 instances (15.13%)
+i: 2
+allen key: 1055 instances (3.96%)
+i: 3
+double-flats wrench: 1157 instances (4.35%)
+i: 4
+hand: 16132 instances (60.61%)
+i: 5
+pedal lockring wrench: 1048 instances (3.94%)
+i: 6
+crank remover: 635 instances (2.39%)
+i: 7
+spindle: 586 instances (2.20%)
+i: 8
+doubleFlatsBottomBracket: 626 instances (2.35%)
+i: 9
+crankArmNonChainSide: 0 instances (0.00%)
+i: 10
+bolt: 0 instances (0.00%)
+i: 11
+pedal: 0 instances (0.00%)
+i: 12
+crankArm: 0 instances (0.00%)
+i: 13
+socket wrench: 0 instances (0.00%)
